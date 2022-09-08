@@ -22,6 +22,7 @@ This is how you size the picture
 ```
 
 ![Picture](/assets/img/android-chrome-192x192.png){: .shadow }
+_This is the image caption_
 
 > Example line for prompt.
 {: .prompt-tip }
@@ -40,9 +41,9 @@ In the next step, the webpage will show all usage scenarios. You can keep the de
 The following table will help you understand the changes to the favicon files:
 
 | File(s)             | From Online Tool                  | From Chirpy |
-|---------------------|:---------------------------------:|:-----------:|
-| `*.PNG`             | ✓                                 | ✗           |
-| `*.ICO`             | ✓                                 | ✗           |
+|:--------------------:|:---------------------------------:|:-----------:|
+| `*.PNG`             | ✗                                | ¼           |
+| `*.ICO`             | ✓                                | ✗           |
 
 >  ✓ means keep, ✗ means delete.
 {: .prompt-info }

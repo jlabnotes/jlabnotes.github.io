@@ -1,6 +1,6 @@
 ---
 title: Text and Typography
-author: cotes
+author: Demo Author
 date: 2022-09-07 11:33:00
 categories: [Blogging, Demo]
 tags: [typography]
