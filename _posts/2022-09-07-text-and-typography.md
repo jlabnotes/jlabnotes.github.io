@@ -2,7 +2,7 @@
 title: Text and Typography
 author: Demo Author
 date: 2022-09-07 11:33:00
-categories: [Blogging, Demo]
+categories: [BLOGGING, DEMO]
 tags: [typography]
 img_path: /assets/img/
 math: true

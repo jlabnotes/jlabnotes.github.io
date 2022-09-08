@@ -3,7 +3,7 @@ title: First Post Ever
 description: This is a small description to the first post
 date: 2022-09-01
 pin: true
-categories: [homelab,hardware]
+categories: [HOMELAB,HARDWARE]
 tags: [servers,dell,hp,suprmicro]
 toc: false
 ---
@@ -48,4 +48,10 @@ The following table will help you understand the changes to the favicon files:
 >  ✓ means keep, ✗ means delete.
 {: .prompt-info }
 
-The next time you build the site, the favicon will be replaced with a customized edition.
+The Jekyll-Theme-Chirpy has added a lot of things to this file but we will only concentrate on a few to get us started, the changes are needed in the following spots:  
+
+- <mark>timezone:</mark> Whatever matches your locale. (ex. America/New_York)
+- <mark>title:</mark> Replace this with your website Title. (ex. Jadehawk's Tech Notes)
+- <mark>tagline:</mark> This will be display under  the main title. (ex. A Small Collection Of Tutorials && Notes)
+- <mark>url:</mark> This is your Github Pages url (ex. https://jadehawk.github.io)
+- <mark>avatar:</mark> A URL to your avatar that will be display on the website.
