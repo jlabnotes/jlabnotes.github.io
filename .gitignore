@@ -9,8 +9,9 @@
 !.versionrc.json
 
 # bundler cache
-_site
-vendor
+_site/
+.bundle/
+vendor/
 Gemfile.lock
 
 # rubygem

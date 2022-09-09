@@ -1,8 +1,8 @@
 ---
 title: CSS Modify
 date: 2022-09-08
-categories: [HOMELAB,SOFTWARE]
-tags: [desktop,dell,simple]
+categories: []
+tags: []
 
 ---
 

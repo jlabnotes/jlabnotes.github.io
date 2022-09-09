@@ -2,8 +2,8 @@
 title: Text and Typography
 author: Demo Author
 date: 2022-09-07 11:33:00
-categories: [BLOGGING, DEMO]
-tags: [typography]
+categories: []
+tags: []
 img_path: /assets/img/
 math: true
 mermaid: true
@@ -103,6 +103,9 @@ Moon
 ## Links
 
 <http://127.0.0.1:4000>
+
+Links on this site  
+
 
 ## Footnote
 
