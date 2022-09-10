@@ -7,19 +7,32 @@ tags: []
 img_path: /assets/img/
 math: true
 mermaid: true
+---
+
+# Full front matter  
+
+```md
+---
+title: Text and Typography
+date: 2022-09-07 11:33:00
+categories: []
+tags: []
+img_path: /assets/img/
+# pinned post
+pin: true
+# introduction image (optional)
 image:
   path: android-chrome-192x192.png
   width: 192
   height: 192
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
-
-This post is to show Markdown syntax rendering on [**Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork), you can also use it as an example of writing. Now, let's start looking at text and typography.
-
-
-## Titles
+```
+# Headers and skipped headers
 ---
-# H1 - heading
+Header which is picked up by TOC. Below headers skipped by TOC
+
+<h1 data-toc-skip>H1 - Main heading</h1>
 
 <h2 data-toc-skip>H2 - heading</h2>
 
@@ -29,35 +42,45 @@ This post is to show Markdown syntax rendering on [**Chirpy**](https://github.co
 ---
 <br>
 
-## Paragraph
+# Links
+## Simple as-is
 
-I wandered lonely as a cloud
+<http://127.0.0.1:4000>
 
-That floats on high o'er vales and hills,
+## Hyperlink
+`Chirpy Theme` this is the link to the source file:  
+[How to write a post](https://chirpy.cotes.page/posts/write-a-new-post/)
 
-When all at once I saw a crowd,
+```md
+<http://127.0.0.1:4000>
+[How to write a post](https://chirpy.cotes.page/posts/write-a-new-post/)
+```
+# Lists
 
-A host, of golden daffodils;
-
-Beside the lake, beneath the trees,
-
-Fluttering and dancing in the breeze.
-
-## Lists
-
-### Ordered list
+## Ordered list
 
 1. Firstly
 2. Secondly
 3. Thirdly
 
-### Unordered list
+```md
+1. Firstly
+2. Secondly
+3. Thirdly
+```
+## Unordered list
 
 - Chapter
   - Section
     - Paragraph
 
-### Task list
+```md
+- Chapter
+  - Section
+    - Paragraph
+```
+
+## Task list
 
 - [ ] TODO
 - [x] Completed
@@ -66,7 +89,13 @@ Fluttering and dancing in the breeze.
   - [ ] Economic recovery
   - [ ] People smile again
 
-### Description list
+```md
+- [x] Completed
+- [ ] Defeat COVID-19
+  - [x] Vaccine production
+```
+
+## Description list
 
 Sun
 : the star around which the earth orbits
@@ -74,16 +103,45 @@ Sun
 Moon
 : the natural satellite of the earth, visible by reflected light from the sun
 
-## Block Quote
+```md
+Sun
+: the star around which the earth orbits
+```
 
-> This line shows the _block quote_.
+# Text highlighters
+
+## /kbd/ tag for Buttons/Menus
+Click the button <kbd>Select your Favicon image</kbd> to upload your image file.
+```md
+Click the button <kbd>Select your Favicon image</kbd> to upload your image file.
+```
+
+## /mark/ tag to highlight
+The changes are needed in the following spots:  
+- <mark>timezone:</mark> Whatever matches your locale. (ex. America/New_York)
+- <mark>title:</mark> Replace this with your website Title. (ex. Jadehawk's Tech Notes)
+
+```md
+The changes are needed in the following spots:  
+- <mark>timezone:</mark> Whatever matches your locale. (ex. America/New_York)
+- <mark>title:</mark> Replace this with your website Title. (ex. Jadehawk's Tech Notes)
+```
+## Block Quote
+This is a normal text line  
+> This line shows the _italics block quote_.  
+
+This is another normal line
+
+```md
+> This line shows the _italics block quote_.
+```
 
 ## Prompts
 
 > An example showing the `tip` type prompt.
 {: .prompt-tip }
 
-> An example showing the `info` type prompt.
+>  ✓ means keep the file, ✗ means delete the file
 {: .prompt-info }
 
 > An example showing the `warning` type prompt.
@@ -92,100 +150,55 @@ Moon
 > An example showing the `danger` type prompt.
 {: .prompt-danger }
 
-## Tables
+```md
+> An example showing the `tip` type prompt.
+{: .prompt-tip }
 
-| Company                      | Contact          | Country |
-|:-----------------------------|:-----------------|--------:|
-| Alfreds Futterkiste          | Maria Anders     | Germany |
-| Island Trading               | Helen Bennett    | UK      |
-| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+>  ✓ means keep the file, ✗ means delete the file
+{: .prompt-info }
 
-## Links
+> An example showing the `warning` type prompt.
+{: .prompt-warning }
 
-<http://127.0.0.1:4000>
-
-Links on this site  
-
-
-## Footnote
-
-Click the hook will locate the footnote[^footnote], and here is another footnote[^fn-nth-2].
-
-## Images
-
-- Default (with caption)
-
-![Desktop View](mockup.png){: width="972" height="589" }
-_Full screen width and center alignment_
-
-<br>
-
-- Shadow
-
-![Window shadow](window.png){: .shadow width="1548" height="864" style="max-width: 90%" }
-_shadow effect (visible in light mode)_
-
-<br>
-
-- Left aligned
-
-![Desktop View](mockup.png){: width="972" height="589" style="max-width: 70%" .normal}
-
-<br>
-
-- Float to left
-
-  ![Desktop View](mockup.png){: width="972" height="589" style="max-width: 200px" .left}
-  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
-
-<br>
-
-- Float to right
-
-  ![Desktop View](mockup.png){: width="972" height="589" style="max-width: 200px" .right}
-  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
-
-<br>
-
-## Mermaid SVG
-
-```mermaid
- gantt
-  title  Adding GANTT diagram functionality to mermaid
-  apple :a, 2017-07-20, 1w
-  banana :crit, b, 2017-07-23, 1d
-  cherry :active, c, after b a, 1d
-```
-
-## Mathematics
-
-The mathematics powered by [**MathJax**](https://www.mathjax.org/):
-
-$$ \sum_{n=1}^\infty 1/n^2 = \frac{\pi^2}{6} $$
-
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are
-
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
-## Inline code
-
-This is an example of `Inline Code`.
-
-## Filepath
-
-Here is the `/path/to/the/file.extend`{: .filepath}.
-
-## Code block
-
-### Common
+> An example showing the `danger` type prompt.
+{: .prompt-danger }
 
 ```
-This is a common code snippet, without syntax highlight and line number.
+## Expand and collapse text
+<details>
+<summary><strong>Click for more details</strong></summary>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget congue risus. Nulla in purus velit. Pellentesque non dolor aliquet, feugiat ligula vitae, lobortis nibh. Fusce placerat dolor ipsum, sit amet viverra felis laoreet ut. Proin ultrices sem placerat congue porta. Maecenas ut sapien mollis mauris posuere semper.
+</details>
+
+```md
+<details>
+<summary><strong>Click for more details</strong></summary>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget congue risus. Nulla in purus velit. Pellentesque non dolor aliquet, feugiat ligula vitae.
+</details>
 ```
 
-### Specific Languages
+# Code Snippets
+## Simple Highlight
+{% highlight ruby %}
+# some comment about the code
+puts "Hello World!"
+{% endhighlight %}
 
-#### Console
+```md
+{% highlight ruby %}
+# some comment about the code
+puts "Hello World!"
+{% endhighlight %}
+```
+
+## Just text
+
+```
+# some comment about the code
+puts "Hello World!"
+
+```
+## Console
 
 ```console
 $ env |grep SHELL
@@ -193,7 +206,7 @@ SHELL=/usr/local/bin/bash
 PYENV_SHELL=bash
 ```
 
-#### Shell
+## Shell
 
 ```bash
 if [ $? -ne 0 ]; then
@@ -202,16 +215,99 @@ if [ $? -ne 0 ]; then
 fi;
 ```
 
-### Specific filename
+## Filename reference
 
 ```sass
 @import
   "colors/light-typography",
   "colors/dark-typography"
 ```
-{: file='_sass/jekyll-theme-chirpy.scss'}
+{: file='_sass/just-a-demo-file.scss'}
 
-## Reverse Footnote
+# Tables
 
-[^footnote]: The footnote source
-[^fn-nth-2]: The 2nd footnote source
+| Company                      | Contact          | Country |
+|:-----------------------------|:-----------------|--------:|
+| Alfreds Futterkiste          | Maria Anders     | Germany |
+| Island Trading               | Helen Bennett    | UK      |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+
+The following table will help you understand the changes to the favicon files:
+
+| File(s)             | From Online Tool                  | From Chirpy |
+|:--------------------:|:---------------------------------:|:-----------:|
+| `*.PNG`             | ✗                                | ¼           |
+| `*.ICO`             | ✓                                | ✗           |
+
+```md
+| Company                      | Contact          | Country |
+|:-----------------------------|:-----------------|--------:|
+| Alfreds Futterkiste          | Maria Anders     | Germany |
+| Island Trading               | Helen Bennett    | UK      |
+| Magazzini Alimentari Riuniti | Giovanni Rovelli | Italy   |
+
+The following table will help you understand the changes to the favicon files:
+
+| File(s)             | From Online Tool                  | From Chirpy |
+|:--------------------:|:---------------------------------:|:-----------:|
+| `*.PNG`             | ✗                                | ¼           |
+| `*.ICO`             | ✓                                | ✗           |
+
+```
+
+# Images
+
+- Default (with caption)
+In order to prevent the page content layout from shifting when the image is loaded, **we should set the width and height for each image.**  
+
+![Desktop View](mockup.png){: w="972" h="589" }
+_Full screen width and center alignment_
+
+```md
+![img-description](/path/to/image)
+_Image Caption_
+```
+
+<br>
+
+- Shadow
+
+![Window shadow](window.png){: .shadow width="1548" height="864" style="max-width: 90%" }
+_shadow effect (visible in light mode)_
+
+```md
+![Window shadow](window.png){: .shadow width="1548" height="864" style="max-width: 90%" }
+_shadow effect (visible in light mode)_
+```
+<br>
+
+- Left aligned
+
+![Desktop View](mockup.png){: width="972" height="589" style="max-width: 70%" .normal}
+
+```md
+![Desktop View](mockup.png){: width="972" height="589" style="max-width: 70%" .normal}
+```
+<br>
+
+- Float to left
+
+  ![Desktop View](mockup.png){: width="972" height="589" style="max-width: 200px" .left}
+  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
+
+```md
+![Desktop View](mockup.png){: width="972" height="589" style="max-width: 200px" .left}
+  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space.
+```
+<br>
+
+- Float to right
+
+  ![Desktop View](mockup.png){: width="972" height="589" style="max-width: 200px" .right}
+  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space."
+```md
+![Desktop View](mockup.png){: width="972" height="589" style="max-width: 200px" .right}
+  "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space.
+```
+
+<br>

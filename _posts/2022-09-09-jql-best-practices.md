@@ -1,13 +1,11 @@
 ---
 title: Jira JQL Best Practices for ACP Exam
 description: This is a small description to the first post
-date: 2022-09-01
+date: 2022-09-09
 pin: false
-categories: [CORE]
-tags: [jql,article]
+categories: [ARTICLES,JQL]
+tags: [acp]
 ---
-**I guess many of us, Atlassian Certified Professionals, will agree that some Atlassian Jira JQL questions which we had in our ACP exams were tricky. These questions can be easier to answer, if you follow the Atlassian JQL Best Practices, which we often forget or simply do not know.**
-
 When preparing for one of the Jira related ACP exams, for example ACP-100 or ACP-120, you should expect a few questions relating to JQL. In ACP-100 preparation topics you can find - `Topic 1: Advanced User Features; 1.1: Given a business requirement, create, translate, critique, and optimize JQL queries.`
 
 Although you may work with JQL on a daily basis, some questions are really tricky and require more time to analyze. Do not underestimate these questions. Sometimes, even if you answer them correctly, you are not always 100% sure about that.
@@ -41,6 +39,6 @@ It does not mean that it is always possible to optimize a JQL query, because not
 
 I hope you found these examples useful and this will bring you one step closer to your ACP Exam success.
 
-If you want to be 100 steps closer, please consider purchasing my e-book, which aimed at Atlassian ACP Exam candiates and Jira Users.
+If you want to learn 100 more JQL examples, please consider purchasing my e-book, which helps Atlassian ACP Exam candiates and Jira Users to master JQL language.
 
 [You will find more information here.](https://jlabnotes.com/jql-cookbook/)
