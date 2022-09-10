@@ -1,7 +1,7 @@
 ---
-title: Global Loop Advanced Workflow in Jira
+title: Global Loop advanced workflow in Jira
 date: 2021-02-21
-categories: [ARTICLES,WORKFLOWS]
+categories: [WORKFLOWS]
 tags: [events,automation]
 img_path: /assets/glaw/
 ---

@@ -184,17 +184,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget congue risus.
 puts "Hello World!"
 {% endhighlight %}
 
-```md
-{% highlight ruby %}
-# some comment about the code
-puts "Hello World!"
-{% endhighlight %}
-```
-
 ## Just text
 
 ```
-# some comment about the code
+# just put three commas
 puts "Hello World!"
 
 ```
