@@ -1,7 +1,7 @@
 ---
 title: Jira JQL Best Practices for ACP Exam
 description: This is a small description to the first post
-date: 2022-09-09
+date: 2022-09-09 09:00:00 +0200
 pin: false
 categories: [JQL]
 tags: [acp]

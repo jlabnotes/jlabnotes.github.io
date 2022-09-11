@@ -1,12 +1,11 @@
 ---
 title: Jira workflow properties list
-date: 2021-01-02 +1200
+date: 2021-01-02 09:00:00 +0200
 categories: [WORKFLOWS]
 tags: [workflow-properties]
 ---
 
 # Disable permissions
-
 ## Disable editing
 
 **Use case**

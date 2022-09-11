@@ -1,6 +1,6 @@
 ---
 title: Jira workflow properties - how to use them?
-date: 2020-12-31 +1200
+date: 2020-12-31 09:00:00 +0200
 categories: [WORKFLOWS]
 tags: [workflow-properties]
 img_path: /assets/jwps/

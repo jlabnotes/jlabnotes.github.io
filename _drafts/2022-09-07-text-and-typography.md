@@ -120,6 +120,7 @@ Click the button <kbd>Select your Favicon image</kbd> to upload your image file.
 The changes are needed in the following spots:  
 - <mark>timezone:</mark> Whatever matches your locale. (ex. America/New_York)
 - <mark>title:</mark> Replace this with your website Title. (ex. Jadehawk's Tech Notes)
+- and this is emoji :joy:
 
 ```md
 The changes are needed in the following spots:  
@@ -302,5 +303,4 @@ _shadow effect (visible in light mode)_
 ![Desktop View](mockup.png){: width="972" height="589" style="max-width: 200px" .right}
   "A repetitive and meaningless text is used to fill the space. A repetitive and meaningless text is used to fill the space.
 ```
-
 <br>
