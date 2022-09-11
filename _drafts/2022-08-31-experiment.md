@@ -5,7 +5,8 @@ categories: []
 tags: []
 img_path: /assets/img/
 ---
-
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+<!--more-->
 # Table Experiment
 
 <table>
@@ -62,12 +63,12 @@ pie title Pets adopted by volunteers
 
 Youtube Usage
 
-[![GoXLR WITH WIRELESS HEADSET - Connect ANY wireless bluetooth headphones](https://img.youtube.com/vi/dTd7f-jK_BE/0.jpg)](https://www.youtube.com/watch?v=dTd7f-jK_BE "GoXLR WITH WIRELESS HEADSET - Connect ANY wireless bluetooth headphones")
+[![HG quality](https://img.youtube.com/vi/dTd7f-jK_BE/hqdefault.jpg)](https://www.youtube.com/watch?v=dTd7f-jK_BE "This is a tooltip")
 
-See all the hardware I recommend at <https://l.technotim.live/gear>
-
-Don't forget to check out the [🚀Launchpad repo](https://l.technotim.live/quick-start) with all of the quick start source files.
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

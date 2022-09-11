@@ -28,6 +28,10 @@ image:
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 ```
+# References and sources
+Jekyll Spaceship Plugin
+: [Github Repo](https://github.com/jeffreytse/jekyll-spaceship)
+
 # Headers and skipped headers
 ---
 Header which is picked up by TOC. Below headers skipped by TOC
@@ -54,6 +58,21 @@ Header which is picked up by TOC. Below headers skipped by TOC
 ```md
 <http://127.0.0.1:4000>
 [How to write a post](https://chirpy.cotes.page/posts/write-a-new-post/)
+```
+
+## Links to PDFs
+
+... you can [get the PDF](/assets/mydoc.pdf) directly.
+
+```
+... you can [get the PDF](/assets/mydoc.pdf) directly.
+```
+## Links to YouTube
+
+[![Video Title](https://img.youtube.com/vi/fe8QgK3j4gw/0.jpg)](https://www.youtube.com/watch?v=fe8QgK3j4gw "This is a tooltip when you hover")
+
+```
+[![Video Title](https://img.youtube.com/vi/dTd7f-jK_BE/0.jpg)](https://www.youtube.com/watch?v=dTd7f-jK_BE "This is a tooltip when you hover")
 ```
 # Lists
 
