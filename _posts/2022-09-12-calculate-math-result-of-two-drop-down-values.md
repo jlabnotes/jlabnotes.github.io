@@ -31,11 +31,14 @@ Smart value:
 ```groovy
 {% raw %} {{#=}}{{issue.probability.value.left(1)}} * {{issue.impact.value.left(1)}}{{/}} {% endraw %}
 ```
-> `value.left` means to cut off the first character from the drop-down value
+> `value.left` means to cut off the first character from the drop-down value.  
 {: .prompt-info }
 
 ## Automation config
 ![screenshot02](cmro01.png){: w="328" h="553" }
+
+Use the smart value in the Edit Issue action.
+![screenshot02](cmro03.png){: w="577" h="240" }
 
 ## Result
 ![screenshot01](cmro02.png){: w="248" h="87" }
