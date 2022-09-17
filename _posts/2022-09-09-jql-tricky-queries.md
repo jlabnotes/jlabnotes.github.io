@@ -4,13 +4,13 @@ description: A few less popular JQL queries to test your knowledge
 date: 2022-09-16 09:00:00 +0200
 pin: false
 categories: [JQL]
-tags: [acp]
+tags: [acp,jql]
 ---
 When preparing for one of the ACP exams, it is worth reviewing your knowledge by evaluating what you already know. This will boost your confidence and will decrease the risk of panic when you get an 'out-of-the-blue' JQL related question.
 
 **Here are a few examples of tricky JQL queries:**
 
-`due >= "0"` 
+`due >= "0"`  
 You can use 0 as the equivalent to function now(). You can put any value in the quote-marks and it will work just fine. Example: due >= "-1000d"
 
 `duedate < endOfWeek(-1)`  

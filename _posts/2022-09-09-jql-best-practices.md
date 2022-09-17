@@ -1,10 +1,9 @@
 ---
-title: Jira JQL Best Practices for ACP Exam
-description: This is a small description to the first post
+title: Jira JQL Best Practices for ACP Exam Candidates
 date: 2022-09-09 09:00:00 +0200
 pin: false
 categories: [JQL]
-tags: [acp]
+tags: [acp,jql]
 ---
 When preparing for one of the Jira related ACP exams, for example ACP-100 or ACP-120, you should expect a few questions relating to JQL. In ACP-100 preparation topics you can find - `Topic 1: Advanced User Features; 1.1: Given a business requirement, create, translate, critique, and optimize JQL queries.`
 
