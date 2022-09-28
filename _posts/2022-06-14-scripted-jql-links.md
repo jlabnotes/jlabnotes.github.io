@@ -1,8 +1,9 @@
 ---
 title: Scripted JQL - Linked Issues
 date: 2022-06-14 09:00:00 +0200
-categories: [SCRIPTRUNNER,SCRIPTED-JQL]
-tags: [jql]
+pin: true
+categories: [JQL]
+tags: [scripted-jql]
 ---
 
 ## General Linking - _hasLinkType()_

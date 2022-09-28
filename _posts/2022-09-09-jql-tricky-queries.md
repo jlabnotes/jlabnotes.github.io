@@ -6,9 +6,10 @@ pin: false
 categories: [JQL]
 tags: [acp,jql]
 ---
-When preparing for one of the ACP exams, it is worth reviewing your knowledge by evaluating what you already know. This will boost your confidence and will decrease the risk of panic when you get an 'out-of-the-blue' JQL related question.
+When preparing for one of the ACP exams, it is worth reviewing your knowledge by evaluating what you already know. This will boost your confidence when you get an 'out-of-the-blue' JQL related question.
 
-**Here are a few examples of tricky JQL queries:**
+**Here are a few examples of tricky JQL queries:**  
+It is probable that on your ACP exam you will get a similar question like "Is this JQL correct?" or "Will this JQL give results or an error?" Review the queries below and be prepared for surprises.
 
 `due >= "0"`  
 You can use 0 as the equivalent to function now(). You can put any value in the quote-marks and it will work just fine. Example: due >= "-1000d"

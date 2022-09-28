@@ -3,7 +3,7 @@ title: Jira workflow properties - how to use them?
 date: 2020-12-31 09:00:00 +0200
 categories: [WORKFLOWS]
 tags: [workflow-properties]
-img_path: /assets/jwps/
+img_path: /assets/images/jwps/
 ---
 Advanced workflow properties in Jira are very useful every time you need to introduce some restrictions on certain statuses or workflow transitions of a workflow. In this article I have collected my favorite permission-based properties that I use most often in advanced Jira configurations.
 

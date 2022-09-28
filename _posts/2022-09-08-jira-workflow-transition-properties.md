@@ -3,7 +3,7 @@ title: Workflow transition properties
 date: 2022-09-08 09:00:00 +0200
 categories: [WORKFLOWS]
 tags: [workflow-properties]
-img_path: /assets/wtp0/
+img_path: /assets/images/wtp0/
 ---
 
 # Two must-have workflow properties

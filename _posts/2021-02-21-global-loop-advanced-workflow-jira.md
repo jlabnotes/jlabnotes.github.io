@@ -3,7 +3,7 @@ title: Global Loop advanced workflow in Jira
 date: 2021-02-21  09:00:00 +0200
 categories: [WORKFLOWS]
 tags: [events,automation]
-img_path: /assets/glaw/
+img_path: /assets/images/glaw/
 ---
 
 # How to create a global loop transition?

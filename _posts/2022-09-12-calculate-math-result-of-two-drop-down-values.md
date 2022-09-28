@@ -3,7 +3,7 @@ title: Calculate math result of two drop down values
 date: 2020-09-12 09:00:00 +0200
 categories: [AUTOMATION,SmartValues]
 tags: [smart-values-math]
-img_path: /assets/img/cmro01
+img_path: /assets/images/cmro01
 ---
 
 # Use case
