@@ -33,8 +33,13 @@ This query will return all issues where a custom field Epic Name contains the wo
 `project in projectsWhereUserHasRole("Developers")`  
 This query will help you find issues in these projects, where you have specific permission or role in projects. You can also use it to check if you have permission or role in specific projects where you do not have administration rights. Example: project in projectsWhereUserHasRole("Developers") AND project = ABC. In this example, if you see issues this means that you have a role Developers in project ABC.
 
-I hope you found these examples useful and this will bring you one step closer to your ACP Exam success.
+`issuekey IN updatedBy(jsmith)`  
+Find issues that were updated by user id jsmity
 
-If you want to learn 100 more JQL examples, please consider purchasing my e-book, which helps Atlassian ACP Exam candiates and Jira Users to master JQL language.
+`issuekey IN updatedBy(jsmith, "-8d")`  
+Find issues that were updated by John Smith within the last 8 days
+
+`issuekey IN updatedBy(jsmith, "2022/06/01", "2022/08/31")`  
+Find issues updated between June and September 2022
 
 [You will find more information about JQL here.](https://jlabnotes.com/jql-cookbook/)
