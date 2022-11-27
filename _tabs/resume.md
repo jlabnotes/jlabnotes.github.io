@@ -1,10 +1,10 @@
 ---
 title: Resume
-icon: fas fa-info-circle
+icon: fas fa-share-alt
 order: 5
 ---
-> If you are interested, here is my professional resume.
-{: .prompt-tip }  
+> Below is my professional resume.
+{: .prompt-info }  
 
 # Bogdan Gorka
 **Atlassian Solutions Architect, Certified Atlassian Expert**
@@ -33,6 +33,14 @@ Selected permanent roles in Poland, Australia and UK 2008 - 2013
 - SAP Project Manager
 - Business Process Manager
 
+## Main Responsibilities
+- Leading remote client consultations across business and technical disciplines
+- Identifying and presenting appropriate business process improvements
+- Guiding integration and configuration deployment of Atlassian tools
+- Customizing and administering Jira and other Atlassian software (including Marketplace apps)
+- Directing, advising and training client's employees - end users
+- Continous increasing knowledge and sharing expertise  
+
 ## Skills Overview  
 **Atlassian Solutions Architect / Business Consultant**
 - Experienced Jira and Confluence business consultant and application administrator
@@ -40,15 +48,18 @@ Selected permanent roles in Poland, Australia and UK 2008 - 2013
 - End-to-end solution architecture, design, configuration and organisational implementation
 - Project management and business change management
 - Business development, pre-sales and client account relations management
+- Agile methodology expert in frameworks Scrum/Kanban and Software Release Management
 
 **Training and Facilitating**
+- Expert training materials graphical designer
 - Designed and conducted on-line and in-class trainings for Atlassian technology end-users, project managers and senior executives
 - Delivered 100+ end-user trainings in using Atlassian technology
 - Facilitated 100+ workshops in process management design
 
 **Project Management**
-- Delivered 20+ Atlassian technology projects and solutions for clients
-- Delivered and supported numerous projects in SAP technology, including implementations, upgrades, infrastructure upgrades, support/enhancement packs, security etc.
+- Methodology expert in SAP Activate framework
+- Delivered 25+ Atlassian technology projects and solutions for clients
+- Delivered and supported numerous projects in SAP technology, including implementations, upgrades and infrastructure upgrades
 - Managed numerous diverse corporate projects including large strategic initiatives like merger between companies or brand relaunch projects
 
 ## Certifications
@@ -67,7 +78,7 @@ Atlassian Skills Badges
 - Atlassian Pro Skills Badge: Confluence Space Administration (APB-CSA) 2022-Jan
 - Atlassian Skills Badge: Configuring and Troubleshooting Permissions in Jira (ASB-JCP) 2021-Nov
 
-Project Management Institute
+Project Management Institute Cerfications
 - PMP® Certificate – Certified Project Management Professional (PMI®)
 
 Atlassian Accreditations
@@ -81,10 +92,13 @@ Atlassian Accreditations
 - **English** - level C1 - General, specialist IT and business vocabulary
 - **German** - level B2 - General communication, basic IT and business vocabulary
 
-## Publications
+## Professional publications
 
 - [Professional Blog JLabNotes](https://www.youtube.com/c/JLabNotes)  
 - [LinkedIn Articles](https://www.linkedin.com/in/bgorka/recent-activity/posts/)  
 - [Atlassian Community Articles and Posts](https://community.atlassian.com/t5/user/viewprofilepage/user-id/518733)  
 - [My JLabNotes YouTube Channel](https://www.youtube.com/c/JLabNotes)  
-- [Jira Days 2021 Webinar - Expand Jira Beyond Company Borders](https://youtu.be/18iOB3pnqGw)  
+- [Jira Day 2021 Presentation - Expand Jira Beyond Company Borders](https://youtu.be/18iOB3pnqGw)  
+
+## More
+[Technical Skills Overview](../usr/tech_overview.html)
