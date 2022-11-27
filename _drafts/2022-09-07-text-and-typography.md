@@ -3,7 +3,7 @@ title: Text and Typography
 author: Demo Author
 date: 2022-09-07 11:33:00
 categories: []
-tags: []
+tags: [drafts]
 img_path: /assets/img/
 math: true
 mermaid: true

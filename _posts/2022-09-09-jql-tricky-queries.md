@@ -34,7 +34,7 @@ This query will return all issues where a custom field Epic Name contains the wo
 This query will help you find issues in these projects, where you have specific permission or role in projects. You can also use it to check if you have permission or role in specific projects where you do not have administration rights. Example: project in projectsWhereUserHasRole("Developers") AND project = ABC. In this example, if you see issues this means that you have a role Developers in project ABC.
 
 `issuekey IN updatedBy(jsmith)`  
-Find issues that were updated by user id jsmity
+Find issues that were updated by user id jsmith
 
 `issuekey IN updatedBy(jsmith, "-8d")`  
 Find issues that were updated by John Smith within the last 8 days

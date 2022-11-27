@@ -26,7 +26,7 @@ title: JLabNotes                    # the main title
 tagline: Jira Administration Notebook   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  A minimal but useful public notes about Jira Administration.
+  Minimal but useful public notebook about Jira Administration.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'htps://jlabnotes.github.io'
@@ -44,11 +44,11 @@ social:
   email: example@doamin.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
+    - https://www.linkedin.com/in/bgorka # change to your linkedin homepage
     - https://twitter.com/jlabnotes      # change to your twitter homepage
     - https://github.com/jlabnotes       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    - https://www.linkedin.com/in/bgorka
 
 google_site_verification:               # fill in to your verification string
 

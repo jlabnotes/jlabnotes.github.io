@@ -2,7 +2,7 @@
 title: Experiment
 date: 2022-09-07  09:00:00 +0200
 categories: []
-tags: []
+tags: [drafts]
 img_path: /assets/img/
 ---
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
