@@ -11,13 +11,18 @@ layout: page
 
 # Jira Administration - DC and Cloud
 
-**Expert Level**
+**Expert Level - Jira**
 - Create comprehensive JIRA workflows including project workflows, screen schemes, permission schemes, notification schemes etc.
 - Use built-in customization as well as third party add-ons for extending the functionality of Atlassian Tools.
 - Determine ways to optimize/improve JIRA setup and process workflows, as well as identify where functionality can/cannot meet user requirements.
 - Knowledge of advanced JIRA concepts (behaviours, transition post function, triggers, validators, listeners, events, etc.)
 - Design and manage schemes including permission, notification, issue type configurations etc.
 
+**Intermediate Level - Jira Service Management**
+- Creating typical configurations for service management teams
+- Using automations for workflows, transitions and notifications
+- Using dedicated JSM plugins for portal management, user synchronization and issue synchronization
+  
 # Jira Apps - DC
 **Expert Level**
 - Automation for Jira
@@ -29,9 +34,14 @@ layout: page
 - Jira Email This Issue
 - Custom Charts
 
+Jira Service Management apps:
+- My Requests Extension
+- Extension for Jira Service Management
+
 **Intermediate Level**
 - JMWE
 - JSU
+- Issue Matrix for Jira
 - eazyBI
 
 **ScriptRunner**

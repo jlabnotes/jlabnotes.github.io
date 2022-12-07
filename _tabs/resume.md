@@ -47,18 +47,18 @@ Selected permanent roles in Poland, Australia and UK 2008 - 2013
 - Specialization: greenfield implementations in the area of business process design and optimisation
 - End-to-end solution architecture, design, configuration and organisational implementation
 - Project management and business change management
-- Business development, pre-sales and client account relations management
+- Business development, pre-sales and client account relations maintenance
 - Agile methodology expert in frameworks Scrum/Kanban and Software Release Management
 
 **Training and Facilitating**
-- Expert training materials graphical designer
+- Expert Designer in training materials preparation
 - Designed and conducted on-line and in-class trainings for Atlassian technology end-users, project managers and senior executives
 - Delivered 100+ end-user trainings in using Atlassian technology
 - Facilitated 100+ workshops in process management design
 
 **Project Management**
-- Methodology expert in SAP Activate framework
 - Delivered 25+ Atlassian technology projects and solutions for clients
+- Methodology expert in SAP Activate framework
 - Delivered and supported numerous projects in SAP technology, including implementations, upgrades and infrastructure upgrades
 - Managed numerous diverse corporate projects including large strategic initiatives like merger between companies or brand relaunch projects
 
@@ -66,22 +66,22 @@ Selected permanent roles in Poland, Australia and UK 2008 - 2013
 
 **Atlassian Certified Expert - from January 2022**
 
-Atlassian Cloud Certifications		
+_Atlassian Cloud Certifications_
 - Atlassian Certified in Managing Jira Projects for Cloud (ACP-MJCP) 2020-Sep
 - Atlassian Certified Jira Administrator for Cloud (ACP-JCA) 2021-Dec
 - Atlassian Data Center and Server Certifications
 - Atlassian Certified Jira Administrator for Data Center and Server (ACP-JA) 2019-Dec
 - Atlassian Certified Jira Project Administrator for Data Center and Server (ACP-JPA) 2019-Jun
 
-Atlassian Skills Badges		
+_Atlassian Skills Badges_
 - Atlassian Skills Badge: Customizing Jira Workflows (ASB-CJW) 2021-Nov
 - Atlassian Pro Skills Badge: Confluence Space Administration (APB-CSA) 2022-Jan
 - Atlassian Skills Badge: Configuring and Troubleshooting Permissions in Jira (ASB-JCP) 2021-Nov
 
-Project Management Institute Cerfications
+_Project Management Institute Cerfications_
 - PMP® Certificate – Certified Project Management Professional (PMI®)
 
-Atlassian Accreditations
+_Atlassian Accreditations_
 - Atlassian Marketing Professional
 - Atlassian Operations Professional
 - Atlassian Sales Professional
@@ -89,7 +89,7 @@ Atlassian Accreditations
 ## Languages
 
 - **Polish** - Native
-- **English** - level C1 - General, specialist IT and business vocabulary
+- **English** - level C2 - General, specialist IT and business vocabulary
 - **German** - level B2 - General communication, basic IT and business vocabulary
 
 ## Professional publications
