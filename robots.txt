@@ -1,0 +1,5 @@
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: htps://jlabnotes.github.io/sitemap.xml
