@@ -2,6 +2,7 @@
 title: Technical Skills Overview
 date: 2022-11-27 22:00:00
 layout: page
+permalink: /skills/
 ---
 
 ## Skills Level explanation
@@ -12,7 +13,7 @@ layout: page
 # Jira Administration - DC and Cloud
 
 **Expert Level - Jira**
-- Create comprehensive JIRA workflows including project workflows, screen schemes, permission schemes, notification schemes etc.
+- Create and optimize JIRA workflows including project workflows, screen schemes, permission schemes, notification schemes etc.
 - Use built-in customization as well as third party add-ons for extending the functionality of Atlassian Tools.
 - Determine ways to optimize/improve JIRA setup and process workflows, as well as identify where functionality can/cannot meet user requirements.
 - Knowledge of advanced JIRA concepts (behaviours, transition post function, triggers, validators, listeners, events, etc.)

@@ -1,9 +1,10 @@
 ---
 title: Resume
-icon: fas fa-share-alt
-order: 5
+date: 2023-05-19 22:00:00
+layout: page
+permalink: /resume/
 ---
-> Below is my professional resume.
+> Below is my professional resume - version 19/05/2023.
 {: .prompt-info }  
 
 # Bogdan Gorka
@@ -11,7 +12,7 @@ order: 5
 
 ## Profile
 
-Atlassian Certified Expert and Solution Architect, with a proven track record of successfully implementing Atlassian products. Over 25 years of my career was shared between Business Analysis, Project Management and implementing applications made by Atlassian, SAP and Microsoft in Germany, Poland Australia, UK, USA and South Africa.  
+Atlassian Certified Expert and Solution Architect, with a proven track record of successfully implementing Atlassian products. Over 25 years of my career was shared between Business Analysis, Project Management and implementing applications made by Atlassian, SAP and Microsoft in Germany, Poland, Australia, UK, USA and South Africa.  
 I specialize in designing and implementing 'greenfield' Business Process Management solutions, based on Jira, Jira Service Management and Confluence configurations, supplemented with a range of Atlassian Marketplace apps.  
 
 ## Employment  
@@ -67,16 +68,21 @@ Selected permanent roles in Poland, Australia and UK 2008 - 2013
 **Atlassian Certified Expert - from January 2022**
 
 _Atlassian Cloud Certifications_
-- Atlassian Certified in Managing Jira Projects for Cloud (ACP-MJCP) 2020-Sep
-- Atlassian Certified Jira Administrator for Cloud (ACP-JCA) 2021-Dec
-- Atlassian Data Center and Server Certifications
-- Atlassian Certified Jira Administrator for Data Center and Server (ACP-JA) 2019-Dec
-- Atlassian Certified Jira Project Administrator for Data Center and Server (ACP-JPA) 2019-Jun
+- Atlassian Certified in Managing Jira Projects for Cloud ([ACP-620](https://www.certmetrics.com/atlassian/public/badge.aspx?i=30&t=c&d=2020-09-01&ci=AT00140188)) 2020-Sep
+- Atlassian Certified Jira Administrator for Cloud ([ACP-120](https://www.certmetrics.com/atlassian/public/badge.aspx?i=26&t=c&d=2021-12-21&ci=AT00140188)) 2021-Dec
+
+_Atlassian Data Center and Server Certifications_
+- Atlassian Certified Jira Administrator for Data Center and Server ([ACP-100](https://www.certmetrics.com/atlassian/public/badge.aspx?i=1&t=c&d=2019-12-04&ci=AT00140188)) 2019-Dec
+- Atlassian Certified Jira Project Administrator for Data Center and Server ([ACP-600](https://www.certmetrics.com/atlassian/public/badge.aspx?i=10&t=c&d=2019-06-18&ci=AT00140188)) 2019-Jun
+- Atlassian Certified in Managing Jira Projects for Data Center ([ACP-610](https://www.certmetrics.com/atlassian/public/badge.aspx?i=33&t=c&d=2023-04-25&ci=AT00140188)) 2023-Apr
+
+_Atlassian Pro Skills Badges_
+- Atlassian Pro Skills Badge: Confluence Space Administration ([APB-220](https://www.certmetrics.com/atlassian/public/badge.aspx?i=35&t=c&d=2022-01-09&ci=AT00140188)) 2022-Jan  
 
 _Atlassian Skills Badges_
-- Atlassian Skills Badge: Customizing Jira Workflows (ASB-CJW) 2021-Nov
-- Atlassian Pro Skills Badge: Confluence Space Administration (APB-CSA) 2022-Jan
-- Atlassian Skills Badge: Configuring and Troubleshooting Permissions in Jira (ASB-JCP) 2021-Nov
+- Atlassian Skills Badge: Customizing Jira Workflows ([ASB-616](https://www.certmetrics.com/atlassian/public/badge.aspx?i=20&t=c&d=2021-11-07&ci=AT00140188)) 2021-Nov
+- Atlassian Skills Badge: Configuring and Troubleshooting Permissions in Jira ([ASB-153](https://www.certmetrics.com/atlassian/public/badge.aspx?i=24&t=c&d=2021-11-01&ci=AT00140188)) 2021-Nov
+- Atlassian Skills Badge: Managing Agile Boards and Reports ([ASB-615](https://www.certmetrics.com/atlassian/public/badge.aspx?i=37&t=c&d=2023-04-25&ci=AT00140188))
 
 _Project Management Institute Cerfications_
 - PMP® Certificate – Certified Project Management Professional (PMI®)
@@ -101,4 +107,4 @@ _Atlassian Accreditations_
 - [Jira Day 2021 Presentation - Expand Jira Beyond Company Borders](https://youtu.be/18iOB3pnqGw)  
 
 ## More
-[Technical Skills Overview](../usr/tech_overview.html)
+[Technical Skills Overview](../skills/)
