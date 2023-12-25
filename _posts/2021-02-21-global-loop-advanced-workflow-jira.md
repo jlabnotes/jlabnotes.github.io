@@ -68,7 +68,3 @@ Then I edit the issue by changing the Assignee to current user and make a note a
 In the second part I check if the Reporter is not current user. If not, I want to send a current Reporter an e-mail notification that the issue has been taken over by a different user.
 
 ![automation](glaw10.png)
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

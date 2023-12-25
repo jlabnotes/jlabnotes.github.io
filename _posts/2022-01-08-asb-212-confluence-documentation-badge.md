@@ -158,9 +158,3 @@ Check this option to see changes made in Edit notification emails.
 
 __Subscribe to recommended updates__  
 You will receive an email with recommended items based on comments and likes
-
-
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

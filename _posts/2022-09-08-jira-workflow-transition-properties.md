@@ -27,10 +27,3 @@ The higher the number, it will be closer to the right
 opsbar-sequence
 ```
 Property value: 10,20,30,40
-
-
-
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

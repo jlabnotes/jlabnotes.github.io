@@ -32,7 +32,7 @@ Selected permanent roles in Poland, Australia and UK 2008 - 2013
 - SAP Organisational Change Manager
 - Project Office Manager
 - SAP Project Manager
-- Business Process Manager
+- Commercial Business Process Manager
 
 ## Main Responsibilities
 - Leading remote client consultations across business and technical disciplines
@@ -47,9 +47,10 @@ Selected permanent roles in Poland, Australia and UK 2008 - 2013
 - Experienced Jira and Confluence business consultant and application administrator
 - Specialization: greenfield implementations in the area of business process design and optimisation
 - End-to-end solution architecture, design, configuration and organisational implementation
-- Project management and business change management
+- Project management and business change coaching
 - Business development, pre-sales and client account relations maintenance
 - Agile methodology expert in frameworks Scrum/Kanban and Software Release Management
+- Jira application governance and design best practices expert
 
 **Training and Facilitating**
 - Expert Designer in training materials preparation
@@ -72,7 +73,7 @@ _Atlassian Cloud Certifications_
 - Atlassian Certified Jira Administrator for Cloud ([ACP-120](https://www.certmetrics.com/atlassian/public/badge.aspx?i=26&t=c&d=2021-12-21&ci=AT00140188)) 2021-Dec
 
 _Atlassian Data Center and Server Certifications_
-- Atlassian Certified Jira Administrator for Data Center and Server ([ACP-100](https://www.certmetrics.com/atlassian/public/badge.aspx?i=1&t=c&d=2019-12-04&ci=AT00140188)) 2019-Dec
+- Atlassian Certified Jira Administrator for Data Center ([ACP-100](https://www.certmetrics.com/atlassian/public/badge.aspx?i=1&t=c&d=2019-12-04&ci=AT00140188)) 2019-Dec
 - Atlassian Certified Jira Project Administrator for Data Center and Server ([ACP-600](https://www.certmetrics.com/atlassian/public/badge.aspx?i=10&t=c&d=2019-06-18&ci=AT00140188)) 2019-Jun
 - Atlassian Certified in Managing Jira Projects for Data Center ([ACP-610](https://www.certmetrics.com/atlassian/public/badge.aspx?i=33&t=c&d=2023-04-25&ci=AT00140188)) 2023-Apr
 
@@ -83,6 +84,7 @@ _Atlassian Skills Badges_
 - Atlassian Skills Badge: Customizing Jira Workflows ([ASB-616](https://www.certmetrics.com/atlassian/public/badge.aspx?i=20&t=c&d=2021-11-07&ci=AT00140188)) 2021-Nov
 - Atlassian Skills Badge: Configuring and Troubleshooting Permissions in Jira ([ASB-153](https://www.certmetrics.com/atlassian/public/badge.aspx?i=24&t=c&d=2021-11-01&ci=AT00140188)) 2021-Nov
 - Atlassian Skills Badge: Managing Agile Boards and Reports ([ASB-615](https://www.certmetrics.com/atlassian/public/badge.aspx?i=37&t=c&d=2023-04-25&ci=AT00140188))
+- Atlassian Skills Badge: Governance and Housekeeping in Jira ([ASB-116](https://www.certmetrics.com/atlassian/public/badge.aspx?i=39&t=c&d=2023-08-31&ci=AT00140188))
 
 _Project Management Institute Cerfications_
 - PMP® Certificate – Certified Project Management Professional (PMI®)

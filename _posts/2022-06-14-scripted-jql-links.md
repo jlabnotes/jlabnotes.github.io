@@ -191,7 +191,3 @@ In the opposite direction, a list of children - change sheets linked with any Ch
    1. <https://www.adaptavist.com/blog/top-10-most-commonly-used-jira-query-language-functions>
    2. <https://blog.valiantys.com/en/expert-tips/jql/>
    3. <https://confluence.atlassian.com/jiraportfolioserver0211/searching-for-issues-using-portfolio-details-945537693.html>
-   
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

@@ -73,9 +73,3 @@ Go to <kbd>Jira Administration / System / Project roles</kbd> and click on any o
 See the role ID in the address bar
 
 ![workflow properties](jwps05.png)
-
-
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

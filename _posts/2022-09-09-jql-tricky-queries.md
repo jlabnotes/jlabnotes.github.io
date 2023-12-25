@@ -40,6 +40,21 @@ Find issues that were updated by user id jsmith
 Find issues that were updated by John Smith within the last 8 days
 
 `issuekey IN updatedBy(jsmith, "2022/06/01", "2022/08/31")`  
-Find issues updated between June and September 2022
+Find issues updated between June and September 2022  
 
-[You will find more information about JQL here.](https://jlabnotes.com/jql-cookbook/)
+> Using Keywords 'AND', 'OR' and Parantheses.
+{: .prompt-tip }
+
+If you use both 'AND' as well as 'OR' in the same query to join two clauses, then the clauses connected with the 'AND' will be treated as one group or unit.  
+`status = Open OR status = “In Progress” AND assignee = bcollins`  
+This query will return:   
+Clause 1) all issues where the status is Open  
+Clause 2) all issues in status In Progress assigned to user BCollins.  
+The keyword OR means here ‘give me these results or these results’. You can’t use the keyword AND here, because an issue cannot be in status Open AND in status “In Progress” at the same time.  
+
+However, if you use Parentheses, the same query will work differently.  
+Have a look at another example below and pay special attention where the parentheses are inserted:  
+`(status = Open OR status = “In Progress”) AND assignee = bcollins`   
+This query will return:  
+Clause 1) in parentheses – select all issues in status Open OR In Progress  
+Clause 2) AND issues need to be assigned to bcollins

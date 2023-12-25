@@ -218,7 +218,3 @@ When a task is in Progress, I want only users in role Administrator to be able t
 Property key: jira.permission.assign.projectrole
 Property value: 10002
 ```
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

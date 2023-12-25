@@ -60,7 +60,3 @@ _Look and feel configuration_
 
 `Documentation`  
 [Changing the Due Date Input Format](https://confluence.atlassian.com/jira/changing-the-due-date-input-format-192536.html)
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

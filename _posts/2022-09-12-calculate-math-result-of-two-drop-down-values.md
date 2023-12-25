@@ -42,7 +42,3 @@ Use the smart value in the Edit Issue action.
 
 ## Result
 ![screenshot01](cmro02.png){: w="248" h="87" }
-
-# More information
-
-[More information and tutorials on https://jlabnotes.com](https://jlabnotes.com/)

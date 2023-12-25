@@ -44,5 +44,3 @@ This will list all issues in status Open from all projects, current and future, 
 I hope you found these examples useful and this will bring you one step closer to your ACP Exam success.
 
 If you want to learn 100 more JQL examples, please consider purchasing my e-book, which helps Atlassian ACP Exam candiates and Jira Users to master JQL language.
-
-[You will find more information about JQL here.](https://jlabnotes.com/jql-cookbook/)

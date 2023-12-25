@@ -13,7 +13,7 @@ permalink: /skills/
 # Jira Administration - DC and Cloud
 
 **Expert Level - Jira**
-- Create and optimize JIRA workflows including project workflows, screen schemes, permission schemes, notification schemes etc.
+- Create and optimize JIRA configuration including project workflows, screen schemes, permission schemes, notification schemes etc.
 - Use built-in customization as well as third party add-ons for extending the functionality of Atlassian Tools.
 - Determine ways to optimize/improve JIRA setup and process workflows, as well as identify where functionality can/cannot meet user requirements.
 - Knowledge of advanced JIRA concepts (behaviours, transition post function, triggers, validators, listeners, events, etc.)
@@ -28,7 +28,7 @@ permalink: /skills/
 **Expert Level**
 - Automation for Jira
 - Structure for Jira
-- Structure Gannt
+- Structure Gantt
 - XRAY Test Management
 - TestFLO Test Management
 - Exalate by idalko (scripted version)
