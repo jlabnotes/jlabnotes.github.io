@@ -8,7 +8,7 @@ tags: [acp,jql]
 ---
 When preparing for one of the ACP exams, it is worth reviewing your knowledge by evaluating what you already know. This will boost your confidence when you get an 'out-of-the-blue' JQL related question.
 
-**Here are a few examples of tricky JQL queries:**  
+## Tricky JQL queries
 It is probable that on your ACP exam you will get a similar question like "Is this JQL correct?" or "Will this JQL give results or an error?" Review the queries below and be prepared for surprises.
 
 `due >= "0"`  
@@ -42,8 +42,7 @@ Find issues that were updated by John Smith within the last 8 days
 `issuekey IN updatedBy(jsmith, "2022/06/01", "2022/08/31")`  
 Find issues updated between June and September 2022  
 
-> Using Keywords 'AND', 'OR' and Parantheses.
-{: .prompt-tip }
+## Using Keywords 'AND', 'OR' and Parantheses.
 
 If you use both 'AND' as well as 'OR' in the same query to join two clauses, then the clauses connected with the 'AND' will be treated as one group or unit.  
 `status = Open OR status = “In Progress” AND assignee = bcollins`  
