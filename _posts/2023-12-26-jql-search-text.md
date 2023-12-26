@@ -3,7 +3,7 @@ title: Jira JQL - searching Text
 date: 2023-12-26 09:00:00 +0200
 pin: false
 categories: [JQL]
-tags: [jql-cookbook]
+tags: [jql-cookbook,jql]
 ---
 ## About searching dates
 

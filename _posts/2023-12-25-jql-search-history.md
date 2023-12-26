@@ -3,7 +3,7 @@ title: Jira JQL - searching Issue History
 date: 2023-12-25 09:00:00 +0200
 pin: false
 categories: [JQL]
-tags: [jql-cookbook]
+tags: [jql-cookbook,jql]
 ---
 There is a list of parameters that are available for operators involving time and history of changes. Below is the list of these parameters and you will see them in practical examples in chapters that follow.
 

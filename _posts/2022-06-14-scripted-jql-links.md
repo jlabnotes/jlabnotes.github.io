@@ -3,7 +3,7 @@ title: Scripted JQL - Linked Issues
 date: 2022-06-14 09:00:00 +0200
 pin: true
 categories: [JQL]
-tags: [scripted-jql]
+tags: [scripted-jql,jql]
 ---
 
 ## General Linking - _hasLinkType()_

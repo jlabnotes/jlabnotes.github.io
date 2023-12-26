@@ -3,7 +3,7 @@ title: Jira JQL - searching People
 date: 2023-12-25 09:00:00 +0200
 pin: false
 categories: [JQL]
-tags: [jql-cookbook]
+tags: [jql-cookbook,jql]
 ---
 ## Searching for user names in Jira DC and Jira Cloud  
 Searching for users by their usernames is possible only in Jira Data Center and Server but not in Jira Cloud.  
