@@ -49,7 +49,7 @@ _Which JQL query satisfies her requirements?_
 A user requested you to help her in creating a filter for her team’s dashboard, to be used in one of dashboard’s gadgets. Her team is participating in a few projects categorized as software – the Jira project keys as follows (ABA, ABB, ABC, ABD, ABF, BDA).  
 This user would like to see all issues that were rejected by the Quality Assurance Team last week and which did not change its status since then. This JQL needs to be as simple as possible.  
 
-_Which JQL query would you recommend to this user?_
+_Which JQL query would you recommend to this user?_  
 **A.**	`project IN (ABA, ABB, ABC, ABD, ABF, BDA) AND status = Rejected BEFORE EndOfWeek(-1)`  
 **B.**	`project IN (ABA, ABB, ABC, ABD, ABF, BDA) AND status CHANGED TO Rejected DURING (startOfWeek(-1), endOfWeek(-1)) AND status = Rejected`  
 **C.**	`category = "software" AND status CHANGED TO Rejected DURING (startOfWeek(-1), endOfWeek(-1)) AND status = Rejected`  
