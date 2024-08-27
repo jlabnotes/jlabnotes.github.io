@@ -187,3 +187,23 @@ Display issues that had the field value Priority set as High on 2020-09-24 and e
 `issue IN issueHistory() and creator = currentUser()`  
 Display up to 50 issues that I looked at recently (stored in my issue browsing history) which I created
 
+## Versions and Sprints
+**Version**  
+grouping of issues in a specific release
+
+`fixversion = version-name`  
+`fixversion in (version1, version2)`  
+`fixversion is not empty`  
+`fixversion in unreleasedVersions()`  
+`fixversion = earliestUnreleasedVersion()`  
+`fixversion = latestReleasedVersion()`  
+`affectedVersion = version-name`
+
+**Sprint**  
+time-boxed iteration of rapid work  
+
+`sprint in futureSprints()`  
+`sprint = sprint-ID`  
+`sprint = sprint-name`  
+`sprint in (sprint1, sprint2, sprint3)`  
+`sprint is empty`  
