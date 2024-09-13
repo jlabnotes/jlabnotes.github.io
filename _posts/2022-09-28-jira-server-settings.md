@@ -1,8 +1,8 @@
 ---
 title: Jira Server/DC Date/Time Settings
 date: 2022-09-28 09:00:00 +0200
-categories: [SETTINGS]
-tags: [date_time]
+categories: [SYSTEM]
+tags: [jira-system-configuration]
 img_path: /assets/images/jss0/
 ---
 

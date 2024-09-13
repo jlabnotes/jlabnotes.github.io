@@ -1,8 +1,8 @@
 ---
-title: Jira system initial configuration
+title: Jira Cloud Date/Time Settings
 date: 2020-09-13 09:00:00 +0200
 categories: [SYSTEM]
-tags: [jira-configuration]
+tags: [jira-system-configuration]
 img_path: /assets/images/jsic/
 ---
 After new Jira instance installation, it is necessary to update the default values for date formatting and first day of the week. It is needed to have properly displayed dates in fields like Due Date or in Sprint Planning.  
