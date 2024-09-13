@@ -32,3 +32,10 @@ Set the properties as follows:
 `Complete Date/Time Format -> dd/MM/yyyy HH:mm`  
 `Day/Month/Year Format -> dd/MM/yyyy`  
 `Use ISO8601 standard in Date Picker -> Set Yes`
+
+# Jira System Advanced in Jira Cloud  
+`jira.date.picker.*` and `jira.date.time.picker.*` aren't supported in the issue view.  
+The issue view formats your dates and times based on your language preferences. .  
+
+More about advanced settings in the Jira Cloud administration documentation:  
+[https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/](https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/)  
