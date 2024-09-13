@@ -33,7 +33,7 @@ Set the properties as follows:
 `Day/Month/Year Format -> dd/MM/yyyy`  
 `Use ISO8601 standard in Date Picker -> Set Yes`
 
-# Jira System Advanced in Jira Cloud  
+# Advanced settings exception in Jira Cloud  
 `jira.date.picker.*` and `jira.date.time.picker.*` aren't supported in the issue view.  
 The issue view formats your dates and times based on your language preferences. .  
 
