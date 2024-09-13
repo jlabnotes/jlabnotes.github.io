@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="Tricky JQL questions for ACP Exam candiates">
+<meta property="og:locale" content="en">
+<meta name="description" content="10 simulated queistions for the ACP exams">
+<meta property="og:description" content="10 simulated queistions for the ACP exams">
+<link rel="canonical" href="htps://jlabnotes.github.io/posts/jql-tricky-jql-questions/">
+<meta property="og:url" content="htps://jlabnotes.github.io/posts/jql-tricky-jql-questions/">
+<meta property="og:site_name" content="JLabNotes">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-12-26T08:00:00+01:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Tricky JQL questions for ACP Exam candiates">
+<meta name="twitter:site" content="@jlabnotes"> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-26T20:25:40+01:00","datePublished":"2022-12-26T08:00:00+01:00","description":"10 simulated queistions for the ACP exams","headline":"Tricky JQL questions for ACP Exam candiates","mainEntityOfPage":{"@type":"WebPage","@id":"htps://jlabnotes.github.io/posts/jql-tricky-jql-questions/"},"url":"htps://jlabnotes.github.io/posts/jql-tricky-jql-questions/"}</script><title>Tricky JQL questions for ACP Exam candiates | JLabNotes</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="JLabNotes">
+<meta name="application-name" content="JLabNotes">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script>
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+<div id="sidebar" class="d-flex flex-column align-items-end">
+<div class="profile-wrapper text-center">
+<div id="avatar"> <a href="/" class="mx-auto"> <img src="/assets/img/avatar/jlab-logo.png" alt="avatar" onerror="this.style.display='none'"> </a>
+</div>
+<div class="site-title mt-3"> <a href="/">JLabNotes</a>
+</div>
+<div class="site-subtitle font-italic">Jira Administration Notebook</div>
+</div>
+<ul class="w-100">
+<li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a>
+</li>
+<li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a>
+</li>
+<li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a>
+</li>
+<li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a>
+</li>
+<li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a>
+</li>
+</ul>
+<div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/jlabnotes" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/jlabnotes" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href="https://www.linkedin.com/in/bgorka" aria-label="linkedin" target="_blank" rel="noopener"> <i class="fab fa-linkedin"></i> </a> <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+</div>
+</div>
+<div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Tricky JQL questions for ACP Exam candiates</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div>
+<i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> </span> <span id="search-cancel">Cancel</span>
+</div></div>
+<div id="main-wrapper" class="d-flex justify-content-center">
+<div id="main" class="container pl-xl-4 pr-xl-4">
+<div class="row">
+<div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+<h1 data-toc-skip>Tricky JQL questions for ACP Exam candiates</h1>
+<div class="post-meta text-muted"> <span> Posted <em class="" data-ts="1672038000" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Dec 26, 2022 </em> </span> <span> Updated <em class="" data-ts="1703618740" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Dec 26, 2023 </em> </span><div class="d-flex justify-content-between"> <span> By <em> <a href="https://www.linkedin.com/in/bgorka">Bogdan Gorka</a> </em> </span><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="2171 words"> <em>12 min</em> read</span>
+</div>
+</div>
+</div>
+<div class="post-content">
+<h2 id="introduction">
+<span class="mr-2">Introduction</span><a href="#introduction" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Below you will find 10 rather difficult examples of how the Atlassian Certified Professional Exam questions may look like. Below the questions there are answers with detailed explanations. Please note: These questions are only simulations and are not taken from any real ACP exam papers.</p>
+<h2 id="questions">
+<span class="mr-2">Questions</span><a href="#questions" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<h3 id="question-1">
+<span class="mr-2">Question 1</span><a href="#question-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>User John contacted you about a problem with his Teamwork dashboard. His login in Jira is ‘john.doe’. On this dashboard John can see a gadget ‘Filter Results’ based on the following JQL query:<br> <code class="language-plaintext highlighter-rouge">project = TRE and resolution = Done</code></p>
+<p>John reports to you that he cannot see any issues in the gadget but all his team members, when they use the same dashboard, can see 5 tasks.</p>
+<p><em>What is the cause of this problem?</em><br> <strong>A.</strong> John has no access to the gadget and one of his team members should share the entire dashboard with John so the gadget will be visible<br> <strong>B.</strong> John should copy the dashboard, save his private version, and then update the query to see the issues: <code class="language-plaintext highlighter-rouge">project = TRE and resolution = Done and assignee = john.doe</code><br> <strong>C.</strong> John does not have the ‘Browse Projects’ permission in project TRE<br> <strong>D.</strong> John should request help from Jira Administrator who should enable the dashboard for him<br>  </p>
+<h3 id="question-2">
+<span class="mr-2">Question 2</span><a href="#question-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Inspect the JQL query shown below:<br> <code class="language-plaintext highlighter-rouge">project = DBRA AND updatedDate &gt; startOfDay(-1) AND updatedDate &lt; endOfDay(-1) OR updated &lt; endOfDay()</code></p>
+<p><em>What will be the outcome of this query?</em><br> <strong>A.</strong> The outcome will be an error. There is no <code class="language-plaintext highlighter-rouge">updatedDate</code> field in Jira<br> <strong>B.</strong> The outcome will be all issues from project DBRA that were updated today<br> <strong>C.</strong> The outcome will be all issues from project DBRA updated yesterday (the last 24 hours)<br> <strong>D.</strong> The outcome will be all issues in this Jira instance</p>
+<h3 id="question-3">
+<span class="mr-2">Question 3</span><a href="#question-3" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Jenny wanted to create the simplest possible JQL query which she can use to list all the tasks that she needs to do by Friday every week. She would like to share this query with other team members belonging to group Developers (jira-team-developers) so they can use it for their tasks list as well.</p>
+<p><em>Which JQL query satisfies her requirements?</em><br> <strong>A.</strong> <code class="language-plaintext highlighter-rouge">status = "To Do" AND assignee = "jenny.smith" AND due &lt;= EndOfWeek()</code><br> <strong>B.</strong> <code class="language-plaintext highlighter-rouge">assignee = currentUser() AND resolution is NULL AND due &lt;= EndOfWeek()</code><br> <strong>C.</strong> <code class="language-plaintext highlighter-rouge">statusCategory = "To Do" AND assignee = "jenny.smith" AND due &lt;= EndOfWeek(1w)</code><br> <strong>D.</strong> <code class="language-plaintext highlighter-rouge">statusCategory = "To Do" AND assignee = currentUser AND assignee in membersOf ("jira-team-developers" AND due &lt;= EndOfWeek()</code></p>
+<h3 id="question-4">
+<span class="mr-2">Question 4</span><a href="#question-4" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A user requested you to help her in creating a filter for her team’s dashboard, to be used in one of dashboard’s gadgets. Her team is participating in a few projects categorized as software – the Jira project keys as follows (ABA, ABB, ABC, ABD, ABF, BDA).<br> This user would like to see all issues that were rejected by the Quality Assurance Team last week and which did not change its status since then. This JQL needs to be as simple as possible.</p>
+<p><em>Which JQL query would you recommend to this user?</em><br> <strong>A.</strong> <code class="language-plaintext highlighter-rouge">project IN (ABA, ABB, ABC, ABD, ABF, BDA) AND status = Rejected BEFORE EndOfWeek(-1)</code><br> <strong>B.</strong> <code class="language-plaintext highlighter-rouge">project IN (ABA, ABB, ABC, ABD, ABF, BDA) AND status CHANGED TO Rejected DURING (startOfWeek(-1), endOfWeek(-1)) AND status = Rejected</code><br> <strong>C.</strong> <code class="language-plaintext highlighter-rouge">category = "software" AND status CHANGED TO Rejected DURING (startOfWeek(-1), endOfWeek(-1)) AND status = Rejected</code><br> <strong>D.</strong> <code class="language-plaintext highlighter-rouge">category = "software" AND status CHANGED TO Rejected DURING (startOfWeek(-1), endOfWeek(-1))</code></p>
+<h3 id="question-5">
+<span class="mr-2">Question 5</span><a href="#question-5" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A user Mel Smith (username: mel.smith) works in one Jira project called “TEMPS”. Mel needs a JQL saved filter which should help her team members in their work. She wants to list issues that meet the requirements which are listed below:</p>
+<ol>
+<li>Issues were assigned to a viewing user but now are assigned to somebody else</li>
+<li>Issues that were created by a user executing the query</li>
+</ol>
+<p><em>Which JQL query will satisfy Mel’s requirements?</em><br> <strong>A.</strong> <code class="language-plaintext highlighter-rouge">assignee WAS currentUser() AND assignee != currentUser() AND created = currentUser() AND project = TEMPS</code><br> <strong>B.</strong> <code class="language-plaintext highlighter-rouge">assignee NOT IN currentUser() AND assignee != currentUser() AND creator = mel.smith</code><br> <strong>C.</strong> <code class="language-plaintext highlighter-rouge">assignee != currentUser() AND assignee WAS currentUser() AND creator IS NOT currentUser()</code><br> <strong>D.</strong> <code class="language-plaintext highlighter-rouge">project = TEMPS AND assignee WAS currentUser() AND assignee != currentUser() AND creator = currentUser()</code></p>
+<h3 id="question-6">
+<span class="mr-2">Question 6</span><a href="#question-6" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Betty created a JQL query which she shares with her team located in London and Chicago:<br> <code class="language-plaintext highlighter-rouge">project = DBA AND type = Story AND created &gt;= startOfDay() AND status = resolved</code></p>
+<p><em>What can you say about his JQL query?</em> <strong>A.</strong> This query is overcomplicated and should be simplified<br> <strong>B.</strong> This query will give different results depending on user profile settings<br> <strong>C.</strong> This query contains the keyword ‘type’ which is a reserved operator in Jira.<br> <strong>D.</strong> Status names should be in quotation marks</p>
+<h3 id="question-7">
+<span class="mr-2">Question 7</span><a href="#question-7" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>In your Jira instance, there is a custom field, type label, called ‘Variables’.<br> A user has requested from you a new JQL query with the following requirement: “I would like to see all unassigned issues from a filter “TEMPUS” which my team is using, where the ‘Variables’ field value equals: Ready. Unfortunately, due to bad Jira administration practices, there is another custom field called Variables and you need to avoid selecting the wrong custom field.”</p>
+<p><em>Which JQL query will return the needed results:</em><br> <strong>A.</strong> <code class="language-plaintext highlighter-rouge">filterName = TEMPUS AND status = Unassigned AND Variables = Ready</code><br> <strong>B.</strong> <code class="language-plaintext highlighter-rouge">filter = TEMPUS AND status = Unassigned AND cf[10240] = Ready</code><br> <strong>C.</strong> <code class="language-plaintext highlighter-rouge">filterName = "TEMPUS" AND assignee IS NULL AND "Variables" = Ready</code><br> <strong>D.</strong> <code class="language-plaintext highlighter-rouge">filter = "TEMPUS" AND assignee IS EMPTY AND cf[10240] = Ready</code><br> <strong>E.</strong> <code class="language-plaintext highlighter-rouge">filter = TEMPUS AND assignee = Unassigned AND cf[10240] = Ready</code></p>
+<h3 id="question-8">
+<span class="mr-2">Question 8</span><a href="#question-8" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Two project managers with their user id: “jwollar” and “ewartes” want to be notified once every week about issues they are watching in Jira, where their name is mentioned in comments. They only want to know about the issues where they have access to these issues.</p>
+<p><em>How will you satisfy this requirement?</em></p>
+<p><strong>A.</strong> Use JQL:<br> <code class="language-plaintext highlighter-rouge">watcher = currentUser() AND comment ~ currentUser()</code><br> and create a shared filter to which each project manager can subscribe to<br> <strong>B.</strong> Use JQL:<br> <code class="language-plaintext highlighter-rouge">projects in projectsWhereUserHasPermission("Browse Projects") AND watcher in (jwollar, ewartes)</code><br> <strong>C.</strong> Use JQL:<br> <code class="language-plaintext highlighter-rouge">project in projectsWhereUserHasPermission("Browse Issues") AND watcher ~ currentUser() AND comment ~ currentUser()</code><br> and create a shared filter to which each project manager can subscribe to<br> <strong>D.</strong> Use JQL:<br> <code class="language-plaintext highlighter-rouge">project in projectsWhereUserHasPermission("Browse Issues") AND watcher = currentUser() AND currentUser() IN comments</code> <br> and create a shared filter to which each project manager can subscribe to</p>
+<h3 id="question-9">
+<span class="mr-2">Question 9</span><a href="#question-9" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Rebeca is a software developer who works in Jira Software. She wants to create a private filter where she will see all her overdue issues, which she cannot complete because they are blocked by others.</p>
+<p><em>Select the JQL query which satisfies this requirement.</em><br> <strong>A.</strong> <code class="language-plaintext highlighter-rouge">projectCategory = "software" AND due &lt; startOfDay() AND status = Blocked</code><br> <strong>B.</strong> <code class="language-plaintext highlighter-rouge">due &lt; startOfDay() AND resolution = Unresolved AND issueLinkType = "is blocked by"</code><br> <strong>C.</strong> <code class="language-plaintext highlighter-rouge">category = "software" AND due &lt; startOfDay() AND resolution = Unresolved</code><br> <strong>D.</strong> <code class="language-plaintext highlighter-rouge">category = software AND due &lt; startOfDay() AND issueLinkType = "is blocked by"</code></p>
+<h3 id="question-10">
+<span class="mr-2">Question 10</span><a href="#question-10" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Out of 5 JQL queries below, only one is correct. Identify this query.<br> <strong>A.</strong> <code class="language-plaintext highlighter-rouge">duedate &lt; endOfMonth("+1q")</code><br> <strong>B.</strong> <code class="language-plaintext highlighter-rouge">assignee in membersOf("dev-group","ops-group")</code><br> <strong>C.</strong> <code class="language-plaintext highlighter-rouge">issue in issueHistory() AND issuetype IN standardIssueTypes()</code><br> <strong>D.</strong> <code class="language-plaintext highlighter-rouge">project = WORK AND project = TEST</code><br> <strong>E.</strong> <code class="language-plaintext highlighter-rouge">summary = "Task for Jenny"</code></p>
+<h2 id="answers">
+<span class="mr-2">Answers</span><a href="#answers" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<h3 id="answer-1">
+<span class="mr-2">Answer (1):</span><a href="#answer-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is not correct. Sharing the dashboard with John is not needed. He has access to the dashboard but cannot see the tasks.<br> B is not correct. Creating the dashboard with this JQL will not help<br> C is correct. Browse permission is needed to see tasks from a project in Jira.<br> D is not correct. There is no such thing in Jira as enabling the dashboard.</p>
+<h3 id="answer-2">
+<span class="mr-2">Answer (2):</span><a href="#answer-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is not correct – ‘updatedDate’ is an alias name for field ‘updated’. This query will not produce and error<br> B is not correct<br> C is not correct. This would have been correct without the second part of the query, after the OR operator<br> D is correct. The query part after the operator OR is responsible for listing all Jira issues. In this case the first part of the query joined by the operators ‘AND’ does not influence the JQL outcome.</p>
+<h3 id="answer-3">
+<span class="mr-2">Answer (3):</span><a href="#answer-3" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is not correct. The results will be limited only to one status name and one user. There can be many other statuses in other workflows and other team members will not see their issues.<br> B is correct. This is the most simple and universal JQL to get a list of tasks that are due by the end of current Week. You can use NULL and EMPTY interchangeably.<br> C is not correct. StatusCategory will not show the tasks that are already in progress. Also, the function EndOfWeek(1w) shows the Saturday next week. Apart from that, limiting the assignee to one person does not satisfy the requirements <br> D is not correct. ‘MembersOf’ is not needed and the ‘currentUser’ does not have the needed brackets</p>
+<h3 id="answer-4">
+<span class="mr-2">Answer (4):</span><a href="#answer-4" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is not correct. You cannot use the predicate BEFORE in this way<br> B is not correct. The JQL query will work and will give the desired results. However, it is not as simple as possible and is not flexible. If a new project is added to category ‘software’, this query will not list the issues from this new project<br> C is correct. It uses the project field ‘category’ and is therefore simplified and adaptive.<br> D is not correct. This query will show all issues that changed to status Rejected but may not be in this status anymore. The requirement says about issues which still remain in the ‘Rejected’ status.</p>
+<h3 id="answer-5">
+<span class="mr-2">Answer (5):</span><a href="#answer-5" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is not correct. The field “created” is about the time dimension and not users<br> B is not correct. Operators NOT IN cannot be used to limit users in field assignee<br> C is not correct. Operators NOT IN cannot be used to limit users in field creator<br> D is correct. Every time you know that it will not limit your results, you should put the project name(s) in the JQL query</p>
+<h3 id="answer-6">
+<span class="mr-2">Answer (6):</span><a href="#answer-6" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is incorrect. This query cannot be further simplified because every segment relates to a different dimension of data<br> B is correct. Calendar functions like endOfDay() always consider the time zone of the viewing user. Time zone is an individual user setting configured in the user profile. In this case there is a time zone difference between offices in London and Chicago so query results may differ.<br> C is incorrect. Keyword ‘type’ is an alias to keyword ‘issuetype’ and can be used interchangeably.<br> D is incorrect. Status names containing only one word do not have to be in quotation marks</p>
+<h3 id="answer-7">
+<span class="mr-2">Answer (7)</span><a href="#answer-7" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is incorrect. The field name “filterName” does not exist<br> B is incorrect. You cannot use statement: status = Unassigned to find unassigned issues (i.e. issues with no assignee)<br> C is incorrect. You cannot use the Custom Field name, if there are more than one fields with that name in the Jira instance.<br> D is correct. Quotation marks in the filter name are optional if there is only one word used<br> E is incorrect. You cannot use the equals:= operator to find the unassigned issues</p>
+<h3 id="answer-8">
+<span class="mr-2">Answer (8)</span><a href="#answer-8" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is correct. You do not need to check the ‘Browse Projects’ permission because filter results always show only issues to which a user has access. Project permissions and Issue security may limit the number of issues that are listed in filters<br> B is incorrect. You cannot use the field ‘Watcher’ with the operator IN. <br> C is incorrect. You cannot use the field Watcher with the operator CONTAINS:~. Permission ‘Browse Issues’ does not exist in Jira.<br> D is incorrect. You do not need to check the ‘Browse Projects’ permission because filter results always show only issues to which user has access. You cannot use the function currentUser() with the operator IN. Field ‘comments’ does not exist in Jira.</p>
+<h3 id="answer-9">
+<span class="mr-2">Answer (9)</span><a href="#answer-9" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is incorrect. This query will produce an error – there is no field projectCategory in Jira<br> B is correct. This query contains the minimum necessary elements to see Rebeca’s blocked and uncomplete (unresolved) issues which are overdue on the day when the query is being run.<br> C is incorrect. Using the field ‘category’ is not necessary and may limit the query results. Also, issue type linking is missing.<br> D is incorrect. This query will show all overdue issues which are unresolved and resolved.</p>
+<h3 id="answer-10">
+<span class="mr-2">Answer (10)</span><a href="#answer-10" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>A is incorrect. The calendar function endOfMonth() does not support the parameter ‘q’<br> B is incorrect. The user related function membersOf() supports only one parameter. To include two groups, you should write two clauses and combine them with a keyword ‘OR’<br> C is correct. These are valid functions but less frequently used<br> D is incorrect. An issue cannot belong to two projects at the same time. The keyword ‘AND’ is incorrect.<br> E is incorrect. You cannot use the operator -&gt; equals:= in this query but you should rather use the operator -&gt; contains:~</p>
+</div>
+<div class="post-tail-wrapper text-muted">
+<div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href="/categories/jql/">JQL</a>
+</div>
+<div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/acp/" class="post-tag no-text-decoration">acp</a> <a href="/tags/jql/" class="post-tag no-text-decoration">jql</a>
+</div>
+<div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+<div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by Bogdan Gorka.</div>
+<div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Tricky+JQL+questions+for+ACP+Exam+candiates+-+JLabNotes&amp;url=htps%3A%2F%2Fjlabnotes.github.io%2Fposts%2Fjql-tricky-jql-questions%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=htps%3A%2F%2Fjlabnotes.github.io%2Fposts%2Fjql-tricky-jql-questions%2F" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin"> <i class="fa-fw fab fa-linkedin"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" data-title-succeed="Link copied successfully!"> </i> </span>
+</div>
+</div>
+</div>
+</div></div>
+<div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
+<div class="access">
+<div id="access-lastmod" class="post">
+<div class="panel-heading">Recently Updated</div>
+<ul class="post-content pl-0 pb-1 ml-1 mt-2">
+<li><a href="/posts/jira-server-settings/">Jira Server/DC Date/Time Settings</a></li>
+<li><a href="/posts/jira-instance-initial-configuration/">Jira Cloud Date/Time Settings</a></li>
+<li><a href="/posts/jql-search-dates-queries/">Jira JQL - searching Dates queries</a></li>
+<li><a href="/posts/jql-search-history/">Jira JQL - searching Issue History</a></li>
+<li><a href="/posts/jql-search-issue-fields/">Jira JQL - searching Issue Fields</a></li>
+</ul>
+</div>
+<div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+<div class="panel-heading pl-3 pt-2 mb-2">Contents</div>
+<nav id="toc" data-toggle="toc"></nav>
+</div>
+</div>
+</div>
+<div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4">
+<div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+<h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
+<div class="card-deck mb-4">
+<div class="card"> <a href="/posts/jql-tricky-queries/"><div class="card-body"> <em class="small" data-ts="1663311600" data-df="ll"> Sep 16, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Tricky JQL queries for ACP Exam candiates</h3>
+<div class="text-muted small"><p> When preparing for one of the ACP exams, it is worth reviewing your knowledge by evaluating what you already know. This will boost your confidence when you get an ‘out-of-the-blue’ JQL related ques...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/jql-best-practices/"><div class="card-body"> <em class="small" data-ts="1662706800" data-df="ll"> Sep 9, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Jira JQL Best Practices for ACP Exam Candidates</h3>
+<div class="text-muted small"><p> When preparing for one of the Jira related ACP exams, for example ACP-100 or ACP-120, you should expect a few questions relating to JQL. In ACP-100 preparation topics you can find - Topic 1: Advanc...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/asb-212-confluence-documentation-badge/"><div class="card-body"> <em class="small" data-ts="1641625200" data-df="ll"> Jan 8, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>ASB-212 Confluence Documentation Pro Skills Notes</h3>
+<div class="text-muted small"><p> Using Confluence for Documentation &amp;amp; Knowledge Bases: Skillbuilder Using Confluence to build documentation space Good documentation space: self-explanatory, no user-guide needed searchab...</p></div>
+</div></a>
+</div>
+</div>
+</div>
+<div class="post-navigation d-flex justify-content-between"> <a href="/posts/jira-server-settings/" class="btn btn-outline-primary" prompt="Older"><p>Jira Server/DC Date/Time Settings</p></a> <a href="/posts/jql-search-history/" class="btn btn-outline-primary" prompt="Newer"><p>Jira JQL - searching Issue History</p></a>
+</div>
+</div></div>
+<footer class="row pl-3 pr-3"><div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+<div class="footer-left"><p class="mb-0"> © 2024 <a href="https://www.linkedin.com/in/bgorka">Bogdan Gorka</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by Bogdan Gorka.">Some rights reserved.</span></p></div>
+<div class="footer-right"><p class="mb-0"></p></div>
+</div></footer>
+</div>
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content">
+<div id="search-hints"><div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div></div>
+<div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+</div></div>
+</div>
+<div id="mask"></div>
+<a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a><div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false">
+<div class="toast-header"> <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+</div>
+<div class="toast-body text-center pt-0">
+<p class="pl-2 pr-2 mb-3">A new version of content is available.</p>
+<button type="button" class="btn btn-primary" aria-label="Update"> Update </button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No results found.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script>
+</body>
+</html>

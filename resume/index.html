@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="Resume">
+<meta property="og:locale" content="en">
+<meta name="description" content="Minimal but useful public notebook about Jira Administration.">
+<meta property="og:description" content="Minimal but useful public notebook about Jira Administration.">
+<link rel="canonical" href="htps://jlabnotes.github.io/resume/">
+<meta property="og:url" content="htps://jlabnotes.github.io/resume/">
+<meta property="og:site_name" content="JLabNotes">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2023-05-20T00:00:00+02:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Resume">
+<meta name="twitter:site" content="@jlabnotes"> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-05-20T00:00:00+02:00","datePublished":"2023-05-20T00:00:00+02:00","description":"Minimal but useful public notebook about Jira Administration.","headline":"Resume","mainEntityOfPage":{"@type":"WebPage","@id":"htps://jlabnotes.github.io/resume/"},"url":"htps://jlabnotes.github.io/resume/"}</script><title>Resume | JLabNotes</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="JLabNotes">
+<meta name="application-name" content="JLabNotes">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script>
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+<div id="sidebar" class="d-flex flex-column align-items-end">
+<div class="profile-wrapper text-center">
+<div id="avatar"> <a href="/" class="mx-auto"> <img src="/assets/img/avatar/jlab-logo.png" alt="avatar" onerror="this.style.display='none'"> </a>
+</div>
+<div class="site-title mt-3"> <a href="/">JLabNotes</a>
+</div>
+<div class="site-subtitle font-italic">Jira Administration Notebook</div>
+</div>
+<ul class="w-100">
+<li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a>
+</li>
+<li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a>
+</li>
+<li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a>
+</li>
+<li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a>
+</li>
+<li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a>
+</li>
+</ul>
+<div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/jlabnotes" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/jlabnotes" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href="https://www.linkedin.com/in/bgorka" aria-label="linkedin" target="_blank" rel="noopener"> <i class="fab fa-linkedin"></i> </a> <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+</div>
+</div>
+<div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Resume</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Resume</div>
+<i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> </span> <span id="search-cancel">Cancel</span>
+</div></div>
+<div id="main-wrapper" class="d-flex justify-content-center">
+<div id="main" class="container pl-xl-4 pr-xl-4">
+<div class="row">
+<div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+<h1 class="dynamic-title"> Resume</h1>
+<div class="post-content">
+<blockquote class="prompt-info"><div><p>Below is my professional resume - version 19/05/2023.</p></div></blockquote>
+<h1 id="bogdan-gorka">Bogdan Gorka</h1>
+<p><strong>Atlassian Solutions Architect, Certified Atlassian Expert</strong></p>
+<h2 id="profile">
+<span class="mr-2">Profile</span><a href="#profile" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Atlassian Certified Expert and Solution Architect, with a proven track record of successfully implementing Atlassian products. Over 25 years of my career was shared between Business Analysis, Project Management and implementing applications made by Atlassian, SAP and Microsoft in Germany, Poland, Australia, UK, USA and South Africa.<br> I specialize in designing and implementing ‘greenfield’ Business Process Management solutions, based on Jira, Jira Service Management and Confluence configurations, supplemented with a range of Atlassian Marketplace apps.</p>
+<h2 id="employment">
+<span class="mr-2">Employment</span><a href="#employment" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p><strong>PMBG Consulting</strong> - freelance full-time contracting - from 9/2013</p>
+<ul>
+<li>Demicon GmbH (Atlassian Partner) - Atlassian Senior Business Consultant</li>
+<li>Zabka Polska – Atlassian Solutions Project Manager</li>
+<li>AC Nielsen Warsaw – Atlassian PPM Solutions Consultant</li>
+<li>AXA Warsaw – Atlassian PPM Solutions Consultant</li>
+<li>Deviniti Wrocław (Atlassian Partner) – Atlassian PPM Solutions Consultant</li>
+<li>Solaris Bus – Atlassian PPM Solutions Consultant</li>
+<li>Hicron Wrocław – SAP PMO Consultant and Atlassian Expert</li>
+<li>GlaxoSmithKline Poznań – PMO Project Manager</li>
+<li>IPMO Adelaide, Australia – Microsoft EPM Consultant</li>
+</ul>
+<p>Selected permanent roles in Poland, Australia and UK 2008 - 2013</p>
+<ul>
+<li>SAP Organisational Change Manager</li>
+<li>Project Office Manager</li>
+<li>SAP Project Manager</li>
+<li>Commercial Business Process Manager</li>
+</ul>
+<h2 id="main-responsibilities">
+<span class="mr-2">Main Responsibilities</span><a href="#main-responsibilities" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<ul>
+<li>Leading remote client consultations across business and technical disciplines</li>
+<li>Identifying and presenting appropriate business process improvements</li>
+<li>Guiding integration and configuration deployment of Atlassian tools</li>
+<li>Customizing and administering Jira and other Atlassian software (including Marketplace apps)</li>
+<li>Directing, advising and training client’s employees - end users</li>
+<li>Continous increasing knowledge and sharing expertise</li>
+</ul>
+<h2 id="skills-overview">
+<span class="mr-2">Skills Overview</span><a href="#skills-overview" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p><strong>Atlassian Solutions Architect / Business Consultant</strong></p>
+<ul>
+<li>Experienced Jira and Confluence business consultant and application administrator</li>
+<li>Specialization: greenfield implementations in the area of business process design and optimisation</li>
+<li>End-to-end solution architecture, design, configuration and organisational implementation</li>
+<li>Project management and business change coaching</li>
+<li>Business development, pre-sales and client account relations maintenance</li>
+<li>Agile methodology expert in frameworks Scrum/Kanban and Software Release Management</li>
+<li>Jira application governance and design best practices expert</li>
+</ul>
+<p><strong>Training and Facilitating</strong></p>
+<ul>
+<li>Expert Designer in training materials preparation</li>
+<li>Designed and conducted on-line and in-class trainings for Atlassian technology end-users, project managers and senior executives</li>
+<li>Delivered 100+ end-user trainings in using Atlassian technology</li>
+<li>Facilitated 100+ workshops in process management design</li>
+</ul>
+<p><strong>Project Management</strong></p>
+<ul>
+<li>Delivered 25+ Atlassian technology projects and solutions for clients</li>
+<li>Methodology expert in SAP Activate framework</li>
+<li>Delivered and supported numerous projects in SAP technology, including implementations, upgrades and infrastructure upgrades</li>
+<li>Managed numerous diverse corporate projects including large strategic initiatives like merger between companies or brand relaunch projects</li>
+</ul>
+<h2 id="certifications">
+<span class="mr-2">Certifications</span><a href="#certifications" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p><strong>Atlassian Certified Expert - from January 2022</strong></p>
+<p><em>Atlassian Cloud Certifications</em></p>
+<ul>
+<li>Atlassian Certified in Managing Jira Projects for Cloud (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=30&t=c&d=2020-09-01&ci=AT00140188">ACP-620</a>) 2020-Sep</li>
+<li>Atlassian Certified Jira Administrator for Cloud (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=26&t=c&d=2021-12-21&ci=AT00140188">ACP-120</a>) 2021-Dec</li>
+</ul>
+<p><em>Atlassian Data Center and Server Certifications</em></p>
+<ul>
+<li>Atlassian Certified Jira Administrator for Data Center (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=1&t=c&d=2019-12-04&ci=AT00140188">ACP-100</a>) 2019-Dec</li>
+<li>Atlassian Certified Jira Project Administrator for Data Center and Server (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=10&t=c&d=2019-06-18&ci=AT00140188">ACP-600</a>) 2019-Jun</li>
+<li>Atlassian Certified in Managing Jira Projects for Data Center (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=33&t=c&d=2023-04-25&ci=AT00140188">ACP-610</a>) 2023-Apr</li>
+</ul>
+<p><em>Atlassian Pro Skills Badges</em></p>
+<ul><li>Atlassian Pro Skills Badge: Confluence Space Administration (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=35&t=c&d=2022-01-09&ci=AT00140188">APB-220</a>) 2022-Jan</li></ul>
+<p><em>Atlassian Skills Badges</em></p>
+<ul>
+<li>Atlassian Skills Badge: Customizing Jira Workflows (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=20&t=c&d=2021-11-07&ci=AT00140188">ASB-616</a>) 2021-Nov</li>
+<li>Atlassian Skills Badge: Configuring and Troubleshooting Permissions in Jira (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=24&t=c&d=2021-11-01&ci=AT00140188">ASB-153</a>) 2021-Nov</li>
+<li>Atlassian Skills Badge: Managing Agile Boards and Reports (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=37&t=c&d=2023-04-25&ci=AT00140188">ASB-615</a>)</li>
+<li>Atlassian Skills Badge: Governance and Housekeeping in Jira (<a href="https://www.certmetrics.com/atlassian/public/badge.aspx?i=39&t=c&d=2023-08-31&ci=AT00140188">ASB-116</a>)</li>
+</ul>
+<p><em>Project Management Institute Cerfications</em></p>
+<ul><li>PMP® Certificate – Certified Project Management Professional (PMI®)</li></ul>
+<p><em>Atlassian Accreditations</em></p>
+<ul>
+<li>Atlassian Marketing Professional</li>
+<li>Atlassian Operations Professional</li>
+<li>Atlassian Sales Professional</li>
+</ul>
+<h2 id="languages">
+<span class="mr-2">Languages</span><a href="#languages" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<ul>
+<li>
+<strong>Polish</strong> - Native</li>
+<li>
+<strong>English</strong> - level C2 - General, specialist IT and business vocabulary</li>
+<li>
+<strong>German</strong> - level B2 - General communication, basic IT and business vocabulary</li>
+</ul>
+<h2 id="professional-publications">
+<span class="mr-2">Professional publications</span><a href="#professional-publications" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<ul>
+<li><a href="https://www.youtube.com/c/JLabNotes">Professional Blog JLabNotes</a></li>
+<li><a href="https://www.linkedin.com/in/bgorka/recent-activity/posts/">LinkedIn Articles</a></li>
+<li><a href="https://community.atlassian.com/t5/user/viewprofilepage/user-id/518733">Atlassian Community Articles and Posts</a></li>
+<li><a href="https://www.youtube.com/c/JLabNotes">My JLabNotes YouTube Channel</a></li>
+<li><a href="https://youtu.be/18iOB3pnqGw">Jira Day 2021 Presentation - Expand Jira Beyond Company Borders</a></li>
+</ul>
+<h2 id="more">
+<span class="mr-2">More</span><a href="#more" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p><a href="../skills/">Technical Skills Overview</a></p>
+</div>
+</div></div>
+<div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access">
+<div id="access-lastmod" class="post">
+<div class="panel-heading">Recently Updated</div>
+<ul class="post-content pl-0 pb-1 ml-1 mt-2">
+<li><a href="/posts/jira-server-settings/">Jira Server/DC Date/Time Settings</a></li>
+<li><a href="/posts/jira-instance-initial-configuration/">Jira Cloud Date/Time Settings</a></li>
+<li><a href="/posts/jql-search-dates-queries/">Jira JQL - searching Dates queries</a></li>
+<li><a href="/posts/jql-search-history/">Jira JQL - searching Issue History</a></li>
+<li><a href="/posts/jql-search-issue-fields/">Jira JQL - searching Issue Fields</a></li>
+</ul>
+</div>
+<div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div>
+</div></div>
+</div>
+<footer class="row pl-3 pr-3"><div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+<div class="footer-left"><p class="mb-0"> © 2024 <a href="https://www.linkedin.com/in/bgorka">Bogdan Gorka</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by Bogdan Gorka.">Some rights reserved.</span></p></div>
+<div class="footer-right"><p class="mb-0"></p></div>
+</div></footer>
+</div>
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content">
+<div id="search-hints"><div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div></div>
+<div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+</div></div>
+</div>
+<div id="mask"></div>
+<a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a><div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false">
+<div class="toast-header"> <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+</div>
+<div class="toast-body text-center pt-0">
+<p class="pl-2 pr-2 mb-3">A new version of content is available.</p>
+<button type="button" class="btn btn-primary" aria-label="Update"> Update </button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No results found.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script defer src="/assets/js/dist/page.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="Scripted JQL - Linked Issues">
+<meta property="og:locale" content="en">
+<meta name="description" content="General Linking - hasLinkType()">
+<meta property="og:description" content="General Linking - hasLinkType()">
+<link rel="canonical" href="htps://jlabnotes.github.io/posts/scripted-jql-links/">
+<meta property="og:url" content="htps://jlabnotes.github.io/posts/scripted-jql-links/">
+<meta property="og:site_name" content="JLabNotes">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2022-06-14T09:00:00+02:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Scripted JQL - Linked Issues">
+<meta name="twitter:site" content="@jlabnotes"> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-26T20:29:35+01:00","datePublished":"2022-06-14T09:00:00+02:00","description":"General Linking - hasLinkType()","headline":"Scripted JQL - Linked Issues","mainEntityOfPage":{"@type":"WebPage","@id":"htps://jlabnotes.github.io/posts/scripted-jql-links/"},"url":"htps://jlabnotes.github.io/posts/scripted-jql-links/"}</script><title>Scripted JQL - Linked Issues | JLabNotes</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="JLabNotes">
+<meta name="application-name" content="JLabNotes">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script>
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+<div id="sidebar" class="d-flex flex-column align-items-end">
+<div class="profile-wrapper text-center">
+<div id="avatar"> <a href="/" class="mx-auto"> <img src="/assets/img/avatar/jlab-logo.png" alt="avatar" onerror="this.style.display='none'"> </a>
+</div>
+<div class="site-title mt-3"> <a href="/">JLabNotes</a>
+</div>
+<div class="site-subtitle font-italic">Jira Administration Notebook</div>
+</div>
+<ul class="w-100">
+<li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a>
+</li>
+<li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a>
+</li>
+<li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a>
+</li>
+<li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a>
+</li>
+<li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a>
+</li>
+</ul>
+<div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/jlabnotes" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/jlabnotes" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href="https://www.linkedin.com/in/bgorka" aria-label="linkedin" target="_blank" rel="noopener"> <i class="fab fa-linkedin"></i> </a> <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+</div>
+</div>
+<div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Scripted JQL - Linked Issues</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div>
+<i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> </span> <span id="search-cancel">Cancel</span>
+</div></div>
+<div id="main-wrapper" class="d-flex justify-content-center">
+<div id="main" class="container pl-xl-4 pr-xl-4">
+<div class="row">
+<div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+<h1 data-toc-skip>Scripted JQL - Linked Issues</h1>
+<div class="post-meta text-muted"> <span> Posted <em class="" data-ts="1655190000" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Jun 14, 2022 </em> </span> <span> Updated <em class="" data-ts="1703618975" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Dec 26, 2023 </em> </span><div class="d-flex justify-content-between"> <span> By <em> <a href="https://www.linkedin.com/in/bgorka">Bogdan Gorka</a> </em> </span><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1043 words"> <em>5 min</em> read</span>
+</div>
+</div>
+</div>
+<div class="post-content">
+<h2 id="general-linking---haslinktype">
+<span class="mr-2">General Linking - <em>hasLinkType()</em></span><a href="#general-linking---haslinktype" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Find issues that have ANY linked issues<br> <code class="language-plaintext highlighter-rouge">issueFunction in hasLinks()</code></p>
+<p>Find issues that have a specific link (they are linked with an inward or outward link)<br> <code class="language-plaintext highlighter-rouge">issueFunction in hasLinks("is duplicated by")</code></p>
+<p>This is a generic JQL query which does the same thing only for one ticket. <br> <code class="language-plaintext highlighter-rouge">issue in linkedIssues(ABC-123,"is duplicated by")</code> <br> Find issues that are linked to a particular issue via a particular type of link</p>
+<h2 id="general-linking---haslinktype-1">
+<span class="mr-2">General Linking - <em>hasLinkType()</em></span><a href="#general-linking---haslinktype-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>If you want to use the <em>Link Name</em>, use the function hasLinkType()<br> Find all issues which use a specific Link Name eg.’Duplicate’ ‘Duplicate’ is the <em>Name</em> of the link and not its <em>outward/inward link description</em>.</p>
+<p>Review Issue Linking names in Jira Administration.<br> <code class="language-plaintext highlighter-rouge">issueFunction in hasLinkType(Duplicate)</code></p>
+<p>Find all issues which use a specific Link Name with more than one word - ‘Parent Child Link’.<br> <code class="language-plaintext highlighter-rouge">issueFunction in hasLinkType("Parent Child Link")</code></p>
+<p>If you want to use the <em>outward/inward link description</em>, then use function hasLinks().</p>
+<p>Below are two examples which have equivalent result: <br> <code class="language-plaintext highlighter-rouge">issueFunction in hasLinkType("Duplicate")</code><br> <code class="language-plaintext highlighter-rouge">issueFunction in hasLinks("duplicates") OR issueFunction in hasLinks("is duplicated by")</code></p>
+<p>Find issues with more than 2 ‘blocks’ outward links<br> <code class="language-plaintext highlighter-rouge">issueFunction in hasLinks("blocks", "+2")</code></p>
+<h2 id="selecting-specific-issues-which-are-linked---linkedissuesof">
+<span class="mr-2">Selecting specific issues which are linked - <em>linkedIssuesOf()</em></span><a href="#selecting-specific-issues-which-are-linked---linkedissuesof" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p><strong>Template</strong><br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf(Subquery, link_type)</code></p>
+<p><strong>Examples</strong><br> Find issues linked by any link type, which are in status ‘In Progress’.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("status='In Progress'")</code></p>
+<p>Find issues linked by an outward link ‘clones’ and these issues are in status ‘To Do’.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("status='To Do'", "clones")</code></p>
+<h2 id="selecting-specific-issues-linked-with-epics">
+<span class="mr-2">Selecting specific issues linked with Epics</span><a href="#selecting-specific-issues-linked-with-epics" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Find all issues linked by any type of regular link and including Epics Links and Subtask links for a specific subquery relating to tasks.<br> As a result you will get issues matched by the subquery, including linked Epics and Sub-tasks.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOfAll("Key = DOR-15300")</code><br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOfAll("project=IDP")</code></p>
+<p>You can save the query as named filter and use its name.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("filter = 'DRMA: All Open Tasks'")</code></p>
+<p>Find linked issues with whatever link to this specific issue SBM-600.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("SBM-600")</code></p>
+<p>Find linked issues with link type ‘clones’ to specific issue.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("SBM-7026", clones)</code></p>
+<h2 id="recursive-linking">
+<span class="mr-2">Recursive Linking</span><a href="#recursive-linking" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<h3 id="one-level-below">
+<span class="mr-2">One Level below</span><a href="#one-level-below" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Recursively - return all issues that are linked both directly and indirectly to the results of the initial query</p>
+<p><strong>Template</strong><br> Find all issues issues that are linked both directly and indirectly to the results of the initial query - top level. <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOfRecursive (Subquery)</code></p>
+<p><strong>Example</strong><br> Find all issues linked the result of the initial query (“key=JIRA-1”) that link back to the issues in the query, including blocks links, duplicates, clones, and more.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOfRecursive ("key = JIRA-1")</code></p>
+<p><strong>Example</strong><br> Find all issues linked directly with the Change Bundle<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOfRecursive("issue =SBM-7043")</code></p>
+<h3 id="all-levels-below">
+<span class="mr-2">All levels below</span><a href="#all-levels-below" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h3>
+<p>Find all issues including subtasks and epic links that are linked directly and indirectly to the results of the initial query.<br> Example<br> Find all linked issue to this Change Bundle <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOfAllRecursive("issue =SBM-7043")</code><br> Result: will show Epics and tasks linked with these Epics, with no link type specified</p>
+<h2 id="epic-subqueries">
+<span class="mr-2">Epic Subqueries</span><a href="#epic-subqueries" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Find all issues linked with a specific set of issues. The names of links are not important. It will find linked issues to issues matched by the subquery.</p>
+<p><strong>Example</strong><br> Find all issues linked with an issue Epic.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("issuetype = Epic")</code></p>
+<p>Show me issues linked with Epic, using the link name ‘Change Bundle’ having specific Component<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("issuetype = Epic", "Change Bundle") and Component = ZERT_VE</code></p>
+<p><strong>Template</strong><br> Find Epics with stories meeting the subquery criteria.<br> <code class="language-plaintext highlighter-rouge">issueFunction in epicsOf (Subquery)</code></p>
+<p><strong>Example</strong><br> Find Epics for stories selected in the query. <br> <code class="language-plaintext highlighter-rouge">issueFunction in epicsOf("project = ABC AND issuetype=Task")</code></p>
+<p>Find Epics with unresolved stories in project Mobile <code class="language-plaintext highlighter-rouge">issueFunction in epicsOf ("resolution = empty and project = Mobile")</code></p>
+<p><strong>Template</strong><br> Find stories in Epics meeting the subquery criteria.<br> <code class="language-plaintext highlighter-rouge">issueFunction in issuesInEpics (Subquery)</code></p>
+<p><strong>Example</strong><br> <code class="language-plaintext highlighter-rouge">issueFunction in issuesInEpics ("project=ABC and status = 'In Progress'")</code><br> Find all issues/stories which have Epics in status ‘In Progress’ in project ABC</p>
+<p><code class="language-plaintext highlighter-rouge">issueFunction in issuesInEpics("resolution is not empty")</code><br> Find all issues/stories in resolved Epics</p>
+<h2 id="sub-task-subqueries">
+<span class="mr-2">Sub-task Subqueries</span><a href="#sub-task-subqueries" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p><strong>Template</strong><br> Show me all issues with sub-tasks<br> <code class="language-plaintext highlighter-rouge">issueFunction in hasSubtasks()</code></p>
+<p><strong>Examples</strong><br> Show me sub-tasks of issues specified by a subquery.<br> In this example: all sub-tasks of all issues from project ABC<br> <code class="language-plaintext highlighter-rouge">issueFunction in subtasksOf("project = ABC")</code></p>
+<p>Show me sub-tasks in status “Done” of parent issues with resolution Empty<br> <code class="language-plaintext highlighter-rouge">issueFunction in subtasksOf("resolution IS EMPTY") AND status = Done</code></p>
+<p>Show me subtasks of the following filter results<br> <code class="language-plaintext highlighter-rouge">issuefunction in subtasksOf("filter = 'Stories in Epic'")</code></p>
+<p>Show me subtasks found by a subquery<br> <code class="language-plaintext highlighter-rouge">issueFunction in subtasksOf("project = IDP AND issuetype=Incident")</code></p>
+<h2 id="parent-issues-finding">
+<span class="mr-2">Parent issues finding</span><a href="#parent-issues-finding" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Stories and sub-tasks in an Epic:<br> <code class="language-plaintext highlighter-rouge">parentEpic = Demo-123</code><br> As a result you will get Issues AND Sub-tasks in epic Demo-123</p>
+<p>Get the parents of subtasks found by a subquery<br> <code class="language-plaintext highlighter-rouge">issueFunction in parentsOf("project=IDP and issuetype=Incident")</code></p>
+<p>Show me parents of sub-tasks from project ABC which are in status Open <code class="language-plaintext highlighter-rouge">issueFunction in parentsOf("project = ABC AND status = Open")</code></p>
+<p>Show me parent issues of unresolved sub-tasks where I am an assignee<br> <code class="language-plaintext highlighter-rouge">issueFunction in parentsOf("Resolution IS EMPTY and Assignee = currentUser()")</code></p>
+<h2 id="jql-function-for-portfolio">
+<span class="mr-2">JQL function for Portfolio</span><a href="#jql-function-for-portfolio" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Get a list of sub-tasks for a specific parent.<br> <code class="language-plaintext highlighter-rouge">issue in childIssuesOf("DOR-12962")</code><br> As a result I will see all children issues</p>
+<p>Get a list of ALL parents for a specific subtask.<br> <code class="language-plaintext highlighter-rouge">issue in parentIssuesOf("DOR-18800")</code><br> As a result I will see all parents - issue and epic</p>
+<h2 id="advanced-linked-parents-children-finding">
+<span class="mr-2">Advanced: Linked Parents-Children finding</span><a href="#advanced-linked-parents-children-finding" class="anchor text-muted"><i class="fas fa-hashtag"></i></a>
+</h2>
+<p>Find all issues linked with a specific set of issues and also linked with a specific link type.<br> Link Name: Change Bundle<br> Outward description: <em>change sheets</em><br> Inward description: <em>bundled in</em><br> In this example I want to see all issues linked to “Change Sheet” using inward link type ‘bundled in’.<br> Source: Change Sheet, Destination: linked issues by link name ‘bundled in’</p>
+<p>I will get a list o parents of selected Change Sheets.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("issuetype = 'Change Sheet'", 'bundled in')</code><br> As a result I will see all Change Bundles (parents)</p>
+<p>Another extended version with sub-query<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("project = DOR and type = EPIC and 'Control Unit' is EMPTY", 'Change Bundle')</code><br> This will show you all Change Bundles for linked issues (Epics in this example) which do not have any value in custom field Control Unit.</p>
+<p>In the opposite direction, a list of children - change sheets linked with any Change Bundles.<br> <code class="language-plaintext highlighter-rouge">issueFunction in linkedIssuesOf("issuetype = 'Change Bundle'", 'change sheets')</code></p>
+<p><strong>Sources:</strong></p>
+<ol>
+<li><a href="https://www.adaptavist.com/blog/top-10-most-commonly-used-jira-query-language-functions">https://www.adaptavist.com/blog/top-10-most-commonly-used-jira-query-language-functions</a></li>
+<li><a href="https://blog.valiantys.com/en/expert-tips/jql/">https://blog.valiantys.com/en/expert-tips/jql/</a></li>
+<li><a href="https://confluence.atlassian.com/jiraportfolioserver0211/searching-for-issues-using-portfolio-details-945537693.html">https://confluence.atlassian.com/jiraportfolioserver0211/searching-for-issues-using-portfolio-details-945537693.html</a></li>
+</ol>
+</div>
+<div class="post-tail-wrapper text-muted">
+<div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href="/categories/jql/">JQL</a>
+</div>
+<div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/scripted-jql/" class="post-tag no-text-decoration">scripted-jql</a> <a href="/tags/jql/" class="post-tag no-text-decoration">jql</a>
+</div>
+<div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+<div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by Bogdan Gorka.</div>
+<div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Scripted+JQL+-+Linked+Issues+-+JLabNotes&amp;url=htps%3A%2F%2Fjlabnotes.github.io%2Fposts%2Fscripted-jql-links%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=htps%3A%2F%2Fjlabnotes.github.io%2Fposts%2Fscripted-jql-links%2F" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin"> <i class="fa-fw fab fa-linkedin"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" data-title-succeed="Link copied successfully!"> </i> </span>
+</div>
+</div>
+</div>
+</div></div>
+<div id="panel-wrapper" class="col-xl-3 pl-2 text-muted">
+<div class="access">
+<div id="access-lastmod" class="post">
+<div class="panel-heading">Recently Updated</div>
+<ul class="post-content pl-0 pb-1 ml-1 mt-2">
+<li><a href="/posts/jira-server-settings/">Jira Server/DC Date/Time Settings</a></li>
+<li><a href="/posts/jira-instance-initial-configuration/">Jira Cloud Date/Time Settings</a></li>
+<li><a href="/posts/jql-search-dates-queries/">Jira JQL - searching Dates queries</a></li>
+<li><a href="/posts/jql-search-history/">Jira JQL - searching Issue History</a></li>
+<li><a href="/posts/jql-search-issue-fields/">Jira JQL - searching Issue Fields</a></li>
+</ul>
+</div>
+<div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.js"></script><div id="toc-wrapper" class="pl-0 pr-4 mb-5">
+<div class="panel-heading pl-3 pt-2 mb-2">Contents</div>
+<nav id="toc" data-toggle="toc"></nav>
+</div>
+</div>
+</div>
+<div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4">
+<div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+<h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
+<div class="card-deck mb-4">
+<div class="card"> <a href="/posts/jql-tricky-queries/"><div class="card-body"> <em class="small" data-ts="1663311600" data-df="ll"> Sep 16, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Tricky JQL queries for ACP Exam candiates</h3>
+<div class="text-muted small"><p> When preparing for one of the ACP exams, it is worth reviewing your knowledge by evaluating what you already know. This will boost your confidence when you get an ‘out-of-the-blue’ JQL related ques...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/jql-tricky-jql-questions/"><div class="card-body"> <em class="small" data-ts="1672038000" data-df="ll"> Dec 26, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Tricky JQL questions for ACP Exam candiates</h3>
+<div class="text-muted small"><p> Introduction Below you will find 10 rather difficult examples of how the Atlassian Certified Professional Exam questions may look like. Below the questions there are answers with detailed explanati...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/jql-search-history/"><div class="card-body"> <em class="small" data-ts="1703487600" data-df="ll"> Dec 25, 2023 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Jira JQL - searching Issue History</h3>
+<div class="text-muted small"><p> There is a list of parameters that are available for operators involving time and history of changes. Below is the list of these parameters and you will see them in practical examples in chapters t...</p></div>
+</div></a>
+</div>
+</div>
+</div>
+<div class="post-navigation d-flex justify-content-between"> <a href="/posts/asb-214-confluence-permissions/" class="btn btn-outline-primary" prompt="Older"><p>ASB-214 Confluence Permissions Pro Skills Notes</p></a> <a href="/posts/jira-workflow-transition-properties/" class="btn btn-outline-primary" prompt="Newer"><p>Workflow transition properties</p></a>
+</div>
+</div></div>
+<footer class="row pl-3 pr-3"><div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+<div class="footer-left"><p class="mb-0"> © 2024 <a href="https://www.linkedin.com/in/bgorka">Bogdan Gorka</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by Bogdan Gorka.">Some rights reserved.</span></p></div>
+<div class="footer-right"><p class="mb-0"></p></div>
+</div></footer>
+</div>
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content">
+<div id="search-hints"><div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div></div>
+<div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+</div></div>
+</div>
+<div id="mask"></div>
+<a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a><div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false">
+<div class="toast-header"> <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+</div>
+<div class="toast-body text-center pt-0">
+<p class="pl-2 pr-2 mb-3">A new version of content is available.</p>
+<button type="button" class="btn btn-primary" aria-label="Update"> Update </button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No results found.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script>
+</body>
+</html>

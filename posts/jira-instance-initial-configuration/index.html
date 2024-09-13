@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Jekyll v4.2.2">
+<meta property="og:title" content="Jira Cloud Date/Time Settings">
+<meta property="og:locale" content="en">
+<meta name="description" content="After new Jira instance installation, it is necessary to update the default values for date formatting and first day of the week. It is needed to have properly displayed dates in fields like Due Date or in Sprint Planning.">
+<meta property="og:description" content="After new Jira instance installation, it is necessary to update the default values for date formatting and first day of the week. It is needed to have properly displayed dates in fields like Due Date or in Sprint Planning.">
+<link rel="canonical" href="htps://jlabnotes.github.io/posts/jira-instance-initial-configuration/">
+<meta property="og:url" content="htps://jlabnotes.github.io/posts/jira-instance-initial-configuration/">
+<meta property="og:site_name" content="JLabNotes">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2020-09-13T09:00:00+02:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Jira Cloud Date/Time Settings">
+<meta name="twitter:site" content="@jlabnotes"> <script type="application/ld+json"> {"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-09-13T13:17:16+02:00","datePublished":"2020-09-13T09:00:00+02:00","description":"After new Jira instance installation, it is necessary to update the default values for date formatting and first day of the week. It is needed to have properly displayed dates in fields like Due Date or in Sprint Planning.","headline":"Jira Cloud Date/Time Settings","mainEntityOfPage":{"@type":"WebPage","@id":"htps://jlabnotes.github.io/posts/jira-instance-initial-configuration/"},"url":"htps://jlabnotes.github.io/posts/jira-instance-initial-configuration/"}</script><title>Jira Cloud Date/Time Settings | JLabNotes</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="JLabNotes">
+<meta name="application-name" content="JLabNotes">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&amp;display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.11.2/css/all.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@1.0.1/dist/bootstrap-toc.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1/dist/magnific-popup.min.css"> <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> <script type="text/javascript"> class ModeToggle { static get MODE_KEY() { return "mode"; } static get MODE_ATTR() { return "data-mode"; } static get DARK_MODE() { return "dark"; } static get LIGHT_MODE() { return "light"; } static get ID() { return "mode-toggle"; } constructor() { if (this.hasMode) { if (this.isDarkMode) { if (!this.isSysDarkPrefer) { this.setDark(); } } else { if (this.isSysDarkPrefer) { this.setLight(); } } } let self = this; /* always follow the system prefers */ this.sysDarkPrefers.addEventListener("change", () => { if (self.hasMode) { if (self.isDarkMode) { if (!self.isSysDarkPrefer) { self.setDark(); } } else { if (self.isSysDarkPrefer) { self.setLight(); } } self.clearMode(); } self.notify(); }); } /* constructor() */ get sysDarkPrefers() { return window.matchMedia("(prefers-color-scheme: dark)"); } get isSysDarkPrefer() { return this.sysDarkPrefers.matches; } get isDarkMode() { return this.mode === ModeToggle.DARK_MODE; } get isLightMode() { return this.mode === ModeToggle.LIGHT_MODE; } get hasMode() { return this.mode != null; } get mode() { return sessionStorage.getItem(ModeToggle.MODE_KEY); } /* get the current mode on screen */ get modeStatus() { if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) { return ModeToggle.DARK_MODE; } else { return ModeToggle.LIGHT_MODE; } } setDark() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE); } setLight() { $('html').attr(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE); sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE); } clearMode() { $('html').removeAttr(ModeToggle.MODE_ATTR); sessionStorage.removeItem(ModeToggle.MODE_KEY); } /* Notify another plugins that the theme mode has changed */ notify() { window.postMessage({ direction: ModeToggle.ID, message: this.modeStatus }, "*"); } } /* ModeToggle */ const toggle = new ModeToggle(); function flipMode() { if (toggle.hasMode) { if (toggle.isSysDarkPrefer) { if (toggle.isLightMode) { toggle.clearMode(); } else { toggle.setLight(); } } else { if (toggle.isDarkMode) { toggle.clearMode(); } else { toggle.setDark(); } } } else { if (toggle.isSysDarkPrefer) { toggle.setLight(); } else { toggle.setDark(); } } toggle.notify(); } /* flipMode() */ </script>
+</head>
+<body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
+<div id="sidebar" class="d-flex flex-column align-items-end">
+<div class="profile-wrapper text-center">
+<div id="avatar"> <a href="/" class="mx-auto"> <img src="/assets/img/avatar/jlab-logo.png" alt="avatar" onerror="this.style.display='none'"> </a>
+</div>
+<div class="site-title mt-3"> <a href="/">JLabNotes</a>
+</div>
+<div class="site-subtitle font-italic">Jira Administration Notebook</div>
+</div>
+<ul class="w-100">
+<li class="nav-item"> <a href="/" class="nav-link"> <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i> <span>HOME</span> </a>
+</li>
+<li class="nav-item"> <a href="/categories/" class="nav-link"> <i class="fa-fw fas fa-stream ml-xl-3 mr-xl-3 unloaded"></i> <span>CATEGORIES</span> </a>
+</li>
+<li class="nav-item"> <a href="/tags/" class="nav-link"> <i class="fa-fw fas fa-tag ml-xl-3 mr-xl-3 unloaded"></i> <span>TAGS</span> </a>
+</li>
+<li class="nav-item"> <a href="/archives/" class="nav-link"> <i class="fa-fw fas fa-archive ml-xl-3 mr-xl-3 unloaded"></i> <span>ARCHIVES</span> </a>
+</li>
+<li class="nav-item"> <a href="/about/" class="nav-link"> <i class="fa-fw fas fa-info-circle ml-xl-3 mr-xl-3 unloaded"></i> <span>ABOUT</span> </a>
+</li>
+</ul>
+<div class="sidebar-bottom mt-auto d-flex flex-wrap justify-content-center align-items-center"> <button class="mode-toggle btn" aria-label="Switch Mode"> <i class="fas fa-adjust"></i> </button> <span class="icon-border"></span> <a href="https://github.com/jlabnotes" aria-label="github" target="_blank" rel="noopener"> <i class="fab fa-github"></i> </a> <a href="https://twitter.com/jlabnotes" aria-label="twitter" target="_blank" rel="noopener"> <i class="fab fa-twitter"></i> </a> <a href="https://www.linkedin.com/in/bgorka" aria-label="linkedin" target="_blank" rel="noopener"> <i class="fab fa-linkedin"></i> </a> <a href="/feed.xml" aria-label="rss"> <i class="fas fa-rss"></i> </a>
+</div>
+</div>
+<div id="topbar-wrapper"><div id="topbar" class="container d-flex align-items-center justify-content-between h-100 pl-3 pr-3 pl-md-4 pr-md-4"> <span id="breadcrumb"> <span> <a href="/"> Home </a> </span> <span>Jira Cloud Date/Time Settings</span> </span> <i id="sidebar-trigger" class="fas fa-bars fa-fw"></i><div id="topbar-title"> Post</div>
+<i id="search-trigger" class="fas fa-search fa-fw"></i> <span id="search-wrapper" class="align-items-center"> <i class="fas fa-search fa-fw"></i> <input class="form-control" id="search-input" type="search" aria-label="search" autocomplete="off" placeholder="Search..."> </span> <span id="search-cancel">Cancel</span>
+</div></div>
+<div id="main-wrapper" class="d-flex justify-content-center">
+<div id="main" class="container pl-xl-4 pr-xl-4">
+<div class="row">
+<div id="core-wrapper" class="col-12 col-lg-11 col-xl-9 pr-xl-4"><div class="post pl-1 pr-1 pl-md-2 pr-md-2">
+<h1 data-toc-skip>Jira Cloud Date/Time Settings</h1>
+<div class="post-meta text-muted"> <span> Posted <em class="" data-ts="1599980400" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Sep 13, 2020 </em> </span> <span> Updated <em class="" data-ts="1726226236" data-df="ll" data-toggle="tooltip" data-placement="bottom"> Sep 13, 2024 </em> </span><div class="d-flex justify-content-between"> <span> By <em> <a href="https://www.linkedin.com/in/bgorka">Bogdan Gorka</a> </em> </span><div> <span class="readtime" data-toggle="tooltip" data-placement="bottom" title="253 words"> <em>1 min</em> read</span>
+</div>
+</div>
+</div>
+<div class="post-content">
+<p>After new Jira instance installation, it is necessary to update the default values for date formatting and first day of the week. It is needed to have properly displayed dates in fields like Due Date or in Sprint Planning.</p>
+<h1 id="jira-system-advanced-settings">Jira System Advanced settings</h1>
+<p>Go to Jira Administration / General configuration / Advanced settings</p>
+<p><img data-src="/assets/images/jsic/jsic01.png" alt="properties-setup" data-proofer-ignore></p>
+<p>Set the properties as follows:<br> <code class="language-plaintext highlighter-rouge">jira.date.picker.java.format = dd/MM/yyyy</code><br> <code class="language-plaintext highlighter-rouge">jira.date.picker.javascript.format = %d/%m/%Y</code><br> <code class="language-plaintext highlighter-rouge">jira.date.time.picker.java.format = dd/MM/yyyy HH:mm</code><br> <code class="language-plaintext highlighter-rouge">jira.date.time.picker.javascript.format = %d/%m/%Y %H:%M</code><br> More about date formats are explained here:<br> <a href="https://confluence.atlassian.com/jira/changing-the-due-date-input-format-192536.html">https://confluence.atlassian.com/jira/changing-the-due-date-input-format-192536.html</a></p>
+<h1 id="jira-system-advanced-settings-1">Jira System Advanced settings</h1>
+<p>Go to Jira Administration / Look and feel<br> In the Date/Time Formats section at the very bottom, make the following changes. All the changes are saved automatically.</p>
+<p><img data-src="/assets/images/jsic/jsic02.png" alt="look-and-feel-setup" data-proofer-ignore></p>
+<p>Set the properties as follows:<br> <code class="language-plaintext highlighter-rouge">Time Format -&gt; HH:mm</code><br> <code class="language-plaintext highlighter-rouge">Day Format -&gt; EEEE HH:mm</code><br> <code class="language-plaintext highlighter-rouge">Complete Date/Time Format -&gt; dd/MM/yyyy HH:mm</code><br> <code class="language-plaintext highlighter-rouge">Day/Month/Year Format -&gt; dd/MM/yyyy</code><br> <code class="language-plaintext highlighter-rouge">Use ISO8601 standard in Date Picker -&gt; Set Yes</code></p>
+<h1 id="advanced-settings-exception-in-jira-cloud">Advanced settings exception in Jira Cloud</h1>
+<p><code class="language-plaintext highlighter-rouge">jira.date.picker.*</code> and <code class="language-plaintext highlighter-rouge">jira.date.time.picker.*</code> aren’t supported in the issue view.<br> The issue view formats your dates and times based on your profile settings page, selected language.<br> In practice this means that if you do not like the US format, eg: Sep 13, 2024 then go to your Atlassian Account, Account preferences, and change the format to UK.</p>
+<p><mark>**Please Note:**</mark> You cannot have English language setup and the German (or any other country) date format any more. If you want to have English interface then you need to have either US or UK format.</p>
+<p>More about advanced settings in the Jira Cloud administration documentation:<br> <a href="https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/">https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/</a></p>
+</div>
+<div class="post-tail-wrapper text-muted">
+<div class="post-meta mb-3"> <i class="far fa-folder-open fa-fw mr-1"></i> <a href="/categories/system/">SYSTEM</a>
+</div>
+<div class="post-tags"> <i class="fa fa-tags fa-fw mr-1"></i> <a href="/tags/jira-system-configuration/" class="post-tag no-text-decoration">jira-system-configuration</a>
+</div>
+<div class="post-tail-bottom d-flex justify-content-between align-items-center mt-3 pt-5 pb-2">
+<div class="license-wrapper"> This post is licensed under <a href="https://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a> by Bogdan Gorka.</div>
+<div class="share-wrapper"> <span class="share-label text-muted mr-1">Share</span> <span class="share-icons"> <a href="https://twitter.com/intent/tweet?text=Jira+Cloud+Date%2FTime+Settings+-+JLabNotes&amp;url=htps%3A%2F%2Fjlabnotes.github.io%2Fposts%2Fjira-instance-initial-configuration%2F" data-toggle="tooltip" data-placement="top" title="Twitter" target="_blank" rel="noopener" aria-label="Twitter"> <i class="fa-fw fab fa-twitter"></i> </a> <a href="https://www.linkedin.com/sharing/share-offsite/?url=htps%3A%2F%2Fjlabnotes.github.io%2Fposts%2Fjira-instance-initial-configuration%2F" data-toggle="tooltip" data-placement="top" title="Linkedin" target="_blank" rel="noopener" aria-label="Linkedin"> <i class="fa-fw fab fa-linkedin"></i> </a> <i id="copy-link" class="fa-fw fas fa-link small" data-toggle="tooltip" data-placement="top" title="Copy link" data-title-succeed="Link copied successfully!"> </i> </span>
+</div>
+</div>
+</div>
+</div></div>
+<div id="panel-wrapper" class="col-xl-3 pl-2 text-muted"><div class="access">
+<div id="access-lastmod" class="post">
+<div class="panel-heading">Recently Updated</div>
+<ul class="post-content pl-0 pb-1 ml-1 mt-2">
+<li><a href="/posts/jira-server-settings/">Jira Server/DC Date/Time Settings</a></li>
+<li><a href="/posts/jira-instance-initial-configuration/">Jira Cloud Date/Time Settings</a></li>
+<li><a href="/posts/jql-search-dates-queries/">Jira JQL - searching Dates queries</a></li>
+<li><a href="/posts/jql-search-history/">Jira JQL - searching Issue History</a></li>
+<li><a href="/posts/jql-search-issue-fields/">Jira JQL - searching Issue Fields</a></li>
+</ul>
+</div>
+<div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div>
+</div></div>
+</div>
+<div class="row"><div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 pl-3 pr-3 pr-xl-4">
+<div id="related-posts" class="mt-5 mb-2 mb-sm-4">
+<h3 class="pt-2 mt-1 mb-4 ml-1" data-toc-skip>Further Reading</h3>
+<div class="card-deck mb-4">
+<div class="card"> <a href="/posts/jira-server-settings/"><div class="card-body"> <em class="small" data-ts="1664348400" data-df="ll"> Sep 28, 2022 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Jira Server/DC Date/Time Settings</h3>
+<div class="text-muted small"><p> Changing the Date/Time display in Jira If you want to change how the date and time is displayed in Jira Server/DC, there are two places where you need to configure settings: General configuration ...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/jql-search-jsm-queries/"><div class="card-body"> <em class="small" data-ts="1724742000" data-df="ll"> Aug 27, 2024 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Jira JQL - searching JSM Queries</h3>
+<div class="text-muted small"><p> Searching for Jira Service Management fields and values Jira Service Management has specific fields with specific values, relating only to that Atlassian product. Queries Approvals Approvals in ...</p></div>
+</div></a>
+</div>
+<div class="card"> <a href="/posts/jql-search-text/"><div class="card-body"> <em class="small" data-ts="1703574000" data-df="ll"> Dec 26, 2023 </em><h3 class="pt-0 mt-1 mb-3" data-toc-skip>Jira JQL - searching Text</h3>
+<div class="text-muted small"><p> About searching dates Searching for text seems to be the most unpredictable type of search in Jira. There are many questions on Atlassian Community from users which complained about wrong results ...</p></div>
+</div></a>
+</div>
+</div>
+</div>
+<div class="post-navigation d-flex justify-content-between"> <a href="/posts/calculate-math-result-of-two-drop-down-values/" class="btn btn-outline-primary" prompt="Older"><p>Calculate math result of two drop down values</p></a> <a href="/posts/jira-workflow-properties-intro/" class="btn btn-outline-primary" prompt="Newer"><p>Jira workflow properties - how to use them?</p></a>
+</div>
+</div></div>
+<footer class="row pl-3 pr-3"><div class="col-12 d-flex justify-content-between align-items-center text-muted pl-0 pr-0">
+<div class="footer-left"><p class="mb-0"> © 2024 <a href="https://www.linkedin.com/in/bgorka">Bogdan Gorka</a>. <span data-toggle="tooltip" data-placement="top" title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by Bogdan Gorka.">Some rights reserved.</span></p></div>
+<div class="footer-right"><p class="mb-0"></p></div>
+</div></footer>
+</div>
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded"><div class="col-12 col-sm-11 post-content">
+<div id="search-hints"><div id="access-tags">
+<div class="panel-heading">Trending Tags</div>
+<div class="d-flex flex-wrap mt-3 mb-1 mr-3"> <a class="post-tag" href="/tags/jql/">jql</a> <a class="post-tag" href="/tags/jql-cookbook/">jql-cookbook</a> <a class="post-tag" href="/tags/acp/">acp</a> <a class="post-tag" href="/tags/workflow-properties/">workflow-properties</a> <a class="post-tag" href="/tags/badge/">badge</a> <a class="post-tag" href="/tags/jira-system-configuration/">jira-system-configuration</a> <a class="post-tag" href="/tags/automation/">automation</a> <a class="post-tag" href="/tags/events/">events</a> <a class="post-tag" href="/tags/scripted-jql/">scripted-jql</a> <a class="post-tag" href="/tags/smart-values-math/">smart-values-math</a>
+</div>
+</div></div>
+<div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+</div></div>
+</div>
+<div id="mask"></div>
+<a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button"> <i class="fas fa-angle-up"></i> </a><div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-animation="true" data-autohide="false">
+<div class="toast-header"> <button type="button" class="ml-2 ml-auto close" data-dismiss="toast" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+</div>
+<div class="toast-body text-center pt-0">
+<p class="pl-2 pr-2 mb-3">A new version of content is available.</p>
+<button type="button" class="btn btn-primary" aria-label="Update"> Update </button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js"></script> <script> SimpleJekyllSearch({ searchInput: document.getElementById('search-input'), resultsContainer: document.getElementById('search-results'), json: '/assets/js/data/search.json', searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0"> <a href="{url}">{title}</a><div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1"> {categories} {tags}</div><p>{snippet}</p></div>', noResultsText: '<p class="mt-5">Oops! No results found.</p>', templateMiddleware: function(prop, value, template) { if (prop === 'categories') { if (value === '') { return `${value}`; } else { return `<div class="mr-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`; } } if (prop === 'tags') { if (value === '') { return `${value}`; } else { return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`; } } } }); </script> <script src="https://cdn.jsdelivr.net/combine/npm/magnific-popup@1/dist/jquery.magnific-popup.min.js,npm/lozad/dist/lozad.min.js,npm/clipboard@2/dist/clipboard.min.js"></script> <script src="https://cdn.jsdelivr.net/combine/npm/dayjs@1/dayjs.min.js,npm/dayjs@1/locale/en.min.js,npm/dayjs@1/plugin/relativeTime.min.js,npm/dayjs@1/plugin/localizedFormat.min.js"></script> <script defer src="/assets/js/dist/post.min.js"></script> <script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.bundle.min.js"></script> <script defer src="/app.js"></script>
+</body>
+</html>
