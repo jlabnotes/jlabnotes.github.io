@@ -32,6 +32,16 @@ image:
 Jekyll Spaceship Plugin
 : [Github Repo](https://github.com/jeffreytse/jekyll-spaceship)
 
+# Styling text
+Bold text ** or __  
+(Example) **bold text** or __bold text__  
+
+Italic text * 8 or _ _  
+(Example) *italic text* or _italic text_  
+
+Docs github reference page  
+[Github Docs basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
 # Headers and skipped headers
 ---
 Header which is picked up by TOC. Below headers skipped by TOC

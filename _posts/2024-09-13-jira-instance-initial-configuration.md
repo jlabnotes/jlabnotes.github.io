@@ -35,7 +35,10 @@ Set the properties as follows:
 
 # Advanced settings exception in Jira Cloud  
 `jira.date.picker.*` and `jira.date.time.picker.*` aren't supported in the issue view.  
-The issue view formats your dates and times based on your language preferences. .  
+The issue view formats your dates and times based on your profile settings page, selected language.  
+In practice this means that if you do not like the US format, eg: Sep 13, 2024 then go to your Atlassian Account, Account preferences, and change the format to UK.  
+
+<mark>**Please Note:**</mark> You cannot have English language setup and the German (or any other country) date format any more. If you want to have English interface then you need to have either US or UK format.
 
 More about advanced settings in the Jira Cloud administration documentation:  
 [https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/](https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/)  
