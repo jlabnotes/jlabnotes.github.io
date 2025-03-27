@@ -42,3 +42,8 @@ In practice this means that if you do not like the US format, eg: Sep 13, 2024 t
 
 More about advanced settings in the Jira Cloud administration documentation:  
 [https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/](https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-settings/)  
+
+# Potential influence of CSV data import
+Date Picker and Date Time Picker formats have influence on how the dates and time can be imported via CSV file.
+Read more:  
+[https://support.atlassian.com/jira-cloud-administration/docs/common-csv-file-questions-and-known-issues/](https://support.atlassian.com/jira-cloud-administration/docs/common-csv-file-questions-and-known-issues/)  
