@@ -20,12 +20,46 @@ Approvals in Jira Service Management workflows.
 `approvals = pendingBy("john smith")`  
 `approvals = myPendingApproval()`  
 
+**Monitoring and approvals explained**  
+*The Approvals* field enables you to return tickets based on their approval status or approver.  
+Example: Return all tickets pending approval from Marin.  
+`approvals = pendingBy(marin)`
+
+*The Request last activity time* field enables you to return tickets based on the time of their creation. You can use this field with date values, ranges, and functions.  
+Example: Return all tickets created between January 1 and January 31, 2024.  
+`request-last-activity-time > "2024/01/01" and request-last-activity-time < "2024/01/31"`
+
+*The Request channel type* field enables you to return tickets based on the channel they were submitted through.  
+Example: Return all tickets that weren’t submitted through the portal.  
+`request-channel-type != portal`
+
+*approved()* function returns all tickets that have been approved.  
+Example: Return all tickets that have not been approved.  
+`approvals != approved()`
+
+*pending()* function returns all tickets waiting for approval from any user.  
+Example: Return all tickets waiting for approval.  
+`approvals = pending()`
+
+*The pendingBy()* function returns all tickets waiting for approval from a specific user.  
+Example: Return all tickets waiting for approval from Haruki.  
+`approvals = pendingBy(haruki)`
+
+*myPendingApproval()* function returns all tickets waiting for approval from the current user.  
+Example: Return all tickets waiting for my approval.  
+`approvals = myPendingApproval()`
+
 **Organisations**  
 Organizations are used to group customers and determine which requests they can view in the JSM customer portal.  
 
 `reporter in organizationMembers(organization-name)`  
 `organizations = organization-name`  
 `organizations in (organization1, organization2)`  
+
+If your service projects use customer organizations, you can use JQL to find and report on data for specific organizations.  
+The *organizationMembers()* function enables you to find tickets associated with a specific organization. The function requires one or multiple organization names as the parameter.  
+Example: Return all tickets where the reporter is a member of the ACME customer organization.  
+`Reporter IN organizationMembers(“ACME”)`
 
 **Service Level Agreements (SLAs)**  
 SLAs represent a goal or commitment between service providers and customers.  
