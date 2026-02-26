@@ -94,5 +94,19 @@ Exampple: Return tickets with more than 12 hours remaining before their Time to 
 `“Time to resolution” > remaining(“12h”)`
 
 *withinCalendarHours()* function returns all tickets where the SLA’s target is active according to its associated calendar.
-👉 For example: Return all tickets where the Premier Support SLA is within its calendar hours.  
+Example: Return all tickets where the Premier Support SLA is within its calendar hours.  
 `"Premier Support SLA" = withinCalendarHours()`
+
+## ACP-420 Examples
+
+`“Time to First Response” > elapsed(“2h”) AND “Time to First Response” = running()`  
+This returns all tickets waiting for a first response for over two hours, and the SLA is still running.
+
+`Time to First Response” < elapsed(“2h”) AND “Time to First Response” = paused()`  
+This returns all tickets waiting for a first response for less than two hours where the SLA has been paused.
+
+`“Time to First Response” > elapsed(“2h”) AND “Time to First Response” = breached()`  
+This returns all tickets waiting for a first response for more than two hours where the SLA is breached.
+
+`“Time to First Response” < elapsed(“2h”) AND “Time to First Response” = running()`  
+This returns all tickets waiting for a first response for less than two hours, where the SLA is still running.
